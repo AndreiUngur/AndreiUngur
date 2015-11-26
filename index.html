@@ -40,8 +40,14 @@
             var consent = window.confirm("Would you like to try out some of the features\ncurrently implemented?");
             if (consent){
             var text = prompt("Hello, what is your name?");
+            var valid=true;
               if (text!=null){
-                if (text=="" || text.length<2){
+                for (i=0;i<text.length;i++){
+                  if (!((text.charAt(i)>'A' && text.charAt(i)<'Z') || (text.charAt(i)>'a' && text.charAt(i)<'z'))){
+                    valid=false;
+                  }
+                }
+                if (text=="" || text.length<2 || !valid){
                   document.write("You have entered an invalid name!");
                 } else {
                   document.write("Hi "+text+"!");
