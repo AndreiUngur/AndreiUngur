@@ -44,7 +44,7 @@
               if (text!=null){
                 for (i=0;i<text.length;i++){
                   if (!((text.charAt(i)>='A' && text.charAt(i)<='Z') || (text.charAt(i)>='a' && text.charAt(i)<='z'))){
-                    if (i>=2 && text.charAt(i)!=' '){ //The first elements can't be a space, and spaces are accepted.
+                    if (i<=2 && text.charAt(i)==' ' || text.charAt(i)==' '){ //The first elements can't be a space, and spaces are accepted.
                       valid=false;
                     }
                   }
