@@ -316,9 +316,9 @@ footer {
   margin-top: 40px;
   font-size: 13px;
   font-family: Helvetica;
-  color: #ff4d4d;
-  text-shadow:
-  1px 1px 0 #000000;
+  color: #330000;
+  text-shadow: 1px 1px 0 #ffffff;
+  opacity: 0.8;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
 }
 
