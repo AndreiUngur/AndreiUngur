@@ -317,7 +317,7 @@ footer {
   font-size: 13px;
   font-family: Helvetica;
   color: #330000;
-  text-shadow: 1px 1px 0 #ffffff;
+  text-shadow: 1px 1px 2 #ffb3b3;
   opacity: 0.8;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
 }
