@@ -212,6 +212,10 @@ strong {
   font-weight: bold;
 }
 
+h2.logo{
+	display:inline;
+}
+
 em {
   font-style: italic;
 }
