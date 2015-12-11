@@ -212,8 +212,9 @@ strong {
   font-weight: bold;
 }
 
-h2.logo{
+h2.img{
 	display:inline;
+	border: 1px solid #0000;
 }
 
 em {
