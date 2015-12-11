@@ -212,7 +212,7 @@ strong {
   font-weight: bold;
 }
 
-h2.logo{
+inner.logo{
 	display:inline;
 	border: 1px solid #0000;
 }
