@@ -110,7 +110,7 @@ header h2 {
 #downloads {
   margin-bottom: 40px;
 }
-
+/*
 a.button {
   display: block;
   float: left;
@@ -160,7 +160,7 @@ a.button span {
   height: 23px;
   padding-left: 50px;
 }
-
+*/
 code, pre {
   margin-bottom: 30px;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
@@ -254,7 +254,7 @@ h2,h3,h4,h5 {
   background: -moz-radial-gradient(center, ellipse cover, rgba(138,138,138,0.65) 0%, rgba(138,138,138,0) 100%);
   background: -webkit-radial-gradient(center, ellipse cover, rgba(138,138,138,0.65) 0%,rgba(138,138,138,0) 100%);
   background: radial-gradient(ellipse at center, rgba(138,138,138,0.65) 0%,rgba(138,138,138,0) 100%);
-  border:auto solid #f4f4f1;
+  border:auto solid #000000;
   border-radius:10px;
   
 }
