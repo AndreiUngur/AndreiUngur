@@ -64,41 +64,57 @@
       </div>
     </div>
     
-    <div id="about">
-      <h2>Object 1</h2> 
+    <h2><button onclick="unhide(about)">Object 1</button></h2> 
+    <div id="about" class="hidden">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
         Test Test Test Test Test 
       </p>
     </div>
-    
-    <div id="education">
-      <h3>Object 2</h3>
-      <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
-      <p>
-        Test Test Test Test Test 
-      </p>
-    </div>
-    <style>
-      #education{
-        display:none;
+    <script type="text/javascript">
+    function unhide(id){
+      var element = document.getElementById(id);
+      if (element.className=='hidden'){
+        element.className='unhidden';
+      } else {
+        element.className='hidden';
       }
-    </style>
-    <div id="experience">
-      <h4>Object 3</h4>
+    }
+    </script>
+    
+    
+    <h3>Object 2</h3>
+    <div id="education">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
         Test Test Test Test Test 
       </p>
     </div>
     
-    <div id="other">
-      <h5>Object 4</h5>
+    <h4>Object 3</h4>
+    <div id="experience">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
         Test Test Test Test Test 
       </p>
     </div>
+    
+    <h5>Object 4</h5>
+    <div id="other">
+      <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
+      <p>
+        Test Test Test Test Test 
+      </p>
+    </div>
+    
+    <style>
+    .hidden{
+      display:none;
+    }
+    .unhidden{
+      display:block;
+    }
+    </style>
     
   </body>
 </html>
