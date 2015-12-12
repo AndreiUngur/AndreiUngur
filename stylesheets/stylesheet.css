@@ -255,7 +255,7 @@ h2,h3,h4,h5 {
   background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
   background: radial-gradient(ellipse at center, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
   border:auto solid #f4f4f1;
-  border-radius:10px;
+  border-radius:30px;
   
 }
 
