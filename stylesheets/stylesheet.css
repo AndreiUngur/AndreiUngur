@@ -77,11 +77,7 @@ header h1 {
   background : #ffffff;
   opacity:0.4;
   position: fixed;
-  top: 1px;
-  left: auto;
-  right: auto;
   text-align:center;
-  margin: 0 auto;
 }
 
 header h2 {
