@@ -76,7 +76,7 @@
     <script type="text/javascript">
     function unhide(id){
       var element = document.getElementById(id);
-      document.write(element.className);
+      window.alert("Does it work?"+element.class);
       if (element.className=="hidden"){
         element.className="unhidden";
       } else {
