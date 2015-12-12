@@ -90,7 +90,16 @@ header h2 {
   height:440px;
   margin: 0 auto;
 }
-#about,#education,#experience, #other{
+#education,#experience, #other{
+  display:none;
+  width: 620px;
+  height:440px;
+  margin: 0 auto;
+}
+#about:hover,#education:hover,#experience:hover,#other:hover{
+  transition: width height 2s;
+}
+#about{
   display:none;
   width: 620px;
   height:440px;
