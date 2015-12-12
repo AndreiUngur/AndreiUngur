@@ -88,12 +88,16 @@ header h2 {
   min-height: 595px;
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
-#about,#education,#experience,#other{
+#about,#education,#experience{
 	
   width: 620px;
   margin: 0 auto;
   position:absolute;
-  top:100px;
+}
+#other{
+  width: 620px;
+  margin: 0 auto;
+  position:absolute;
 }
 
 .inner {
