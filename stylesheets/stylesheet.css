@@ -90,9 +90,10 @@ header h2 {
   margin: 0 auto;
 }
 #about,#education,#experience, #other{
+  display:none;
   width: 620px;
   height:0px;
-  opacity=0;
+  opacity:0;
   margin: 0 auto;
   transition: height opacity 2s;
 }
