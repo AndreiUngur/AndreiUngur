@@ -95,7 +95,7 @@ header h2 {
   height:0px;
   opacity:0;
   margin: 0 auto;
-  transition: height opacity 2s;
+  transition: height 2s, opacity 2s;
 }
 
 #about img,#education img,#experience img,#other img{
