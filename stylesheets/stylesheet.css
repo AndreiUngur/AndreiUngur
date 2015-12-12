@@ -93,9 +93,8 @@ header h2 {
   width: 620px;
   margin: 0 auto;
 }
-#about p{
+#about,#education,#experience,#other p{
 	float:right;
-	margin:0 0 1em 1em;
 }
 
 .inner {
