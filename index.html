@@ -8,10 +8,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <link rel="shortcut icon" href="http://www.iconj.com/ico/d/z/dzwucinopk.ico" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){$("h2").click(function(){ $("about").slideDown("slow");});});
-    </script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -70,18 +66,14 @@
     function unhide(id){
       if (id.style.display=='none'){
         id.style.display='block';
-        id.style.height='440px';
-        id.style.opacity='1.0';
         id.scrollIntoView(true);
       } else {
         id.style.display='none';
-        id.style.height='0px';
-        id.style.opacity='0.0';
       }
     }
     </script>
     
-    <h2>Object 1</h2> 
+    <h2 onclick="unhide(about)">Object 1</h2> 
     <div id="about">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
