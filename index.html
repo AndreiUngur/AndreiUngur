@@ -64,6 +64,27 @@
       </div>
     </div>
     
+    <style>
+    .hidden{
+      display:none;
+    }
+    .unhidden{
+      display:block;
+    }
+    </style>
+    
+    <script type="text/javascript">
+    function unhide(id){
+      var element = document.getElementById(id);
+      document.write(element.className);
+      if (element.className=="hidden"){
+        element.className="unhidden";
+      } else {
+        element.className="hidden";
+      }
+    }
+    </script>
+    
     <h2><button onclick="unhide(about)">Object 1</button></h2> 
     <div id="about" class="hidden">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
@@ -71,17 +92,6 @@
         Test Test Test Test Test 
       </p>
     </div>
-    <script type="text/javascript">
-    function unhide(id){
-      var element = document.getElementById(id);
-      if (element.className=='hidden'){
-        element.className='unhidden';
-      } else {
-        element.className='hidden';
-      }
-    }
-    </script>
-    
     
     <h3>Object 2</h3>
     <div id="education">
@@ -106,15 +116,6 @@
         Test Test Test Test Test 
       </p>
     </div>
-    
-    <style>
-    .hidden{
-      display:none;
-    }
-    .unhidden{
-      display:block;
-    }
-    </style>
     
   </body>
 </html>
