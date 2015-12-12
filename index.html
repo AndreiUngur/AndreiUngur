@@ -64,13 +64,13 @@
     
     <script type="text/javascript">
     function unhide(id){
-      if (id.style.opacity=='0'){
-        id.style.max-height='440px';
-        id.style.opacity='1';
+      if (id.style.display=='none'){
+        id.style.display:'block';
+        id.style.height='440px';
         id.scrollIntoView(true);
       } else {
-        id.style.max-height='0px';
-        id.style.opacity='0px';
+        id.style.display='none';
+        id.style.height='0px';
       }
     }
     </script>
