@@ -93,8 +93,9 @@ header h2 {
   width: 620px;
   margin: 0 auto;
   position:static;
+}
+about.logo{
   border:5px solid #000000;
-  
 }
 .inner {
   width: 620px;
