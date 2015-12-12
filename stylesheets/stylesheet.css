@@ -74,11 +74,7 @@ header h1 {
   line-height: 1.2;
   color: #4d0026;
   letter-spacing: 1px;
-  background : #ffffff;
   opacity:0.4;
-  position: fixed;
-  top: 0px;
-  text-align:center;
 }
 
 header h2 {
