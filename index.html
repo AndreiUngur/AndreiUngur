@@ -65,7 +65,7 @@
       </div>
     </div>
     
-    <script type="text/javascript">
+    <!--script type="text/javascript">
     function unhide(id){
       if (id.style.display=='none'){
         id.style.display='block';
@@ -74,11 +74,12 @@
         id.style.display='none';
       }
     }
-    </script>
+    </script-->
     <script>
     $(document).ready(function(){
       $("h2").click(function(){
         $("#about").slideToggle();
+        $("#about").scrollIntoView();
       });
     });
     </script>
@@ -92,7 +93,7 @@
     </div>
     
     
-    <h3 onclick="unhide(education)">Object 2</h3> 
+    <h3>Object 2</h3> 
     <div id="education">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
@@ -100,7 +101,7 @@
       </p>
     </div>
     
-    <h4 onclick="unhide(experience)">Object 3</h4> 
+    <h4>Object 3</h4> 
     <div id="experience">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
@@ -108,7 +109,7 @@
       </p>
     </div>
     
-    <h5 onclick="unhide(other)">Object 4</h5> 
+    <h5>Object 4</h5> 
     <div id="other">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
