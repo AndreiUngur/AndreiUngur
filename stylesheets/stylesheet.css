@@ -299,7 +299,7 @@ dl dt {
 
 footer {
   padding-top: 20px;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
   margin-top: 40px;
   font-size: 13px;
   font-family: Helvetica;
