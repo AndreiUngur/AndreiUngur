@@ -94,9 +94,7 @@ header h2 {
   margin: 0 auto;
   position:static;
 }
-about.logo{
-  border:5px solid #000000;
-}
+
 .inner {
   width: 620px;
   margin: 0 auto;
@@ -245,7 +243,8 @@ h2,h3,h4,h5 {
   line-height: 1.2;
   color: #4d0026;
   letter-spacing: 1px;	
-  border: 1px solid #000000;
+  border: 1px groove #000000;
+  padding:2px;
 }
 
 h6 {
