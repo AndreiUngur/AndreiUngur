@@ -85,14 +85,17 @@ header h2 {
 }
 
 #container{
-  min-height: 595px;
+  min-height: 480px;
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
-#about,#education,#experience,#other{
+#about,#education,#experience, #other{
 	
   width: 620px;
+  height:440px;
   margin: 0 auto;
-  position:static;
+}
+#about img,#education img,#experience img,#other img{
+	float:right;
 }
 
 .inner {
