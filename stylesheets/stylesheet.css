@@ -91,7 +91,7 @@ header h2 {
 }
 #about,#education,#experience, #other{
   width: 620px;
-  max-height:0px;
+  height:0px;
   opacity:0;
   margin: 0 auto;
   transition: height 2s, opacity 2s;
