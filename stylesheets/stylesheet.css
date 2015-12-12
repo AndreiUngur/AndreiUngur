@@ -83,8 +83,9 @@ header h2 {
 
 #container{
   min-height: 400px;
+  width: auto;
   background : #ffffff;
-  opacity:15%;
+  opacity:0.4;
 }
 #about,#education,#experience, #other{
   display:none;
