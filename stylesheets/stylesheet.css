@@ -85,6 +85,7 @@ header h2 {
 }
 
 #container{
+  display:block;
   width: 620px;
   height:440px;
   margin: 0 auto;
