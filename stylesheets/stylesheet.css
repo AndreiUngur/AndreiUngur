@@ -89,19 +89,14 @@ header h2 {
   height:440px;
   margin: 0 auto;
 }
-#education,#experience, #other{
+#about,#education,#experience, #other{
   display:none;
   width: 620px;
   height:440px;
   margin: 0 auto;
+  transition: display 2s;
 }
 
-#about{
-  display:none;
-  width: 620px;
-  height:440px;
-  margin: 0 auto;
-}
 #about img,#education img,#experience img,#other img{
 	float:right;
 }
