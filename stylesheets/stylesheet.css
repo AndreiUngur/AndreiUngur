@@ -73,6 +73,9 @@ header h1 {
   letter-spacing: 1px;
   background : #ffffff;
   opacity:0.4;
+  position: fixed;
+  top:0px;
+  margin: 0 auto;
 }
 
 header h2 {
@@ -84,18 +87,18 @@ header h2 {
 }
 
 #container{
-  min-height: 400px;
-  width:620px;
-  background : #e6e6e6;
-  opacity:0.5;
+  display:none;
+  width: 620px;
+  height:440px;
+  margin: 0 auto;
+  background: #e6e6e6;
+  opacity:0.4;
 }
 #about,#education,#experience, #other{
   display:none;
   width: 620px;
   height:440px;
   margin: 0 auto;
-  background: #d9d9d9;
-  opacity:0.6;
 }
 #about img,#education img,#experience img,#other img{
 	float:right;
