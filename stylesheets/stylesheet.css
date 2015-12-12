@@ -93,7 +93,6 @@ header h2 {
   width: 620px;
   height:440px;
   margin: 0 auto;
-  position:fixed;
 }
 #about img,#education img,#experience img,#other img{
 	float:right;
