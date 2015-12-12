@@ -89,8 +89,11 @@ header h2 {
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 #about,#education,#experience,#other{
+	
   width: 620px;
   margin: 0 auto;
+  position:static;
+  
 }
 .inner {
   width: 620px;
