@@ -85,11 +85,11 @@ header h2 {
 }
 
 #container{
-  min-height: 480px;
+  min-height: 400px;
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 #about,#education,#experience, #other{
-	
+  display:none;
   width: 620px;
   height:440px;
   margin: 0 auto;
@@ -249,6 +249,9 @@ h2,h3,h4,h5 {
   border: 1px groove #000000;
   padding:2px;
   text-align:center;
+  width: 620px;
+  height:0 auto;
+  margin: 0 auto;
 }
 
 h6 {
