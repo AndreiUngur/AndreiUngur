@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Made by Andrei Ungur */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,7 +50,10 @@ body {
   line-height: 1.5;
   color: #800000;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  background: #e6e6e6 url(../images/body-bg.png) 0 0 repeat;
+  background: rgb(252,253,251);
+  background: -moz-linear-gradient(-45deg, rgba(252,253,251,1) 0%, rgba(242,246,242,1) 50%, rgba(231,238,230,1) 51%, rgba(246,252,246,1) 100%); 
+  background: -webkit-linear-gradient(-45deg, rgba(252,253,251,1) 0%,rgba(242,246,242,1) 50%,rgba(231,238,230,1) 51%,rgba(246,252,246,1) 100%);
+  background: linear-gradient(135deg, rgba(252,253,251,1) 0%,rgba(242,246,242,1) 50%,rgba(231,238,230,1) 51%,rgba(246,252,246,1) 100%);
 }
 
 a {
@@ -85,8 +85,10 @@ header h2 {
 }
 
 #container{
-  min-height: 400px;
-  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
+  display:block;
+  width: 620px;
+  height:440px;
+  margin: 0 auto;
 }
 #about,#education,#experience, #other{
   display:none;
@@ -94,6 +96,7 @@ header h2 {
   height:440px;
   margin: 0 auto;
 }
+
 #about img,#education img,#experience img,#other img{
 	float:right;
 }
@@ -106,11 +109,7 @@ header h2 {
 #container .inner img {
   max-width: 100%;
 }
-
-#downloads {
-  margin-bottom: 40px;
-}
-
+/*
 a.button {
   display: block;
   float: left;
@@ -160,7 +159,7 @@ a.button span {
   height: 23px;
   padding-left: 50px;
 }
-
+*/
 code, pre {
   margin-bottom: 30px;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
@@ -241,17 +240,27 @@ h1 {
 }
 
 h2,h3,h4,h5 {
+  top:15px;
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 24px; font-weight: 600;
   line-height: 1.2;
-  color: #4d0026;
-  letter-spacing: 1px;	
-  border: 1px groove #000000;
-  padding:2px;
+  color: #80003f;
+  letter-spacing: 1px;
+  padding:5px;
   text-align:center;
   width: 620px;
   height:0 auto;
   margin: 0 auto;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(138,138,138,0.65) 0%, rgba(138,138,138,0) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(138,138,138,0.65) 0%,rgba(138,138,138,0) 100%);
+  background: radial-gradient(ellipse at center, rgba(138,138,138,0.65) 0%,rgba(138,138,138,0) 100%);
+  border: outset;
+  border-radius:10px;
+  transition: width 0.2s;
+  
+}
+h2:hover,h3:hover,h4:hover,h5:hover{
+  width:650px;
 }
 
 h6 {
