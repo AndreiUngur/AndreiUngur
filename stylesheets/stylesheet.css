@@ -93,7 +93,7 @@ header h2 {
   width: 620px;
   margin: 0 auto;
 }
-#about p,#education p,#experience p,#other p{
+#about img,#education img,#experience img,#other img{
 	float:right;
 }
 
