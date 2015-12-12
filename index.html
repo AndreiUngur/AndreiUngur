@@ -64,30 +64,18 @@
       </div>
     </div>
     
-    <style>
-    .hidden{
-      display:none;
-    }
-    .unhidden{
-      display:block;
-    }
-    </style>
-    
     <script type="text/javascript">
     function unhide(id){
-      window.alert(id);
-      window.alert("This");
-      var element = document.getElementById(id);
-      if (element.className=='hidden'){
-        element.className='unhidden';
+      if (id.style.display=='none'){
+        id.style.display='block';
       } else {
-        element.className='hidden';
+        id.style.display='none';
       }
     }
     </script>
     
     <h2>Object 1<input type="button" onclick="unhide(about)"></h2> 
-    <div id="about" class="hidden">
+    <div id="about">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
         Test Test Test Test Test 
