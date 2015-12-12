@@ -66,6 +66,7 @@
     function unhide(id){
       if (id.style.display=='none'){
         id.style.display='block';
+        id.scrollIntoView(true);
       } else {
         id.style.display='none';
       }
