@@ -96,9 +96,7 @@ header h2 {
   height:440px;
   margin: 0 auto;
 }
-#about:hover,#education:hover,#experience:hover,#other:hover{
-  transition: width height 2s;
-}
+
 #about{
   display:none;
   width: 620px;
@@ -264,6 +262,9 @@ h2,h3,h4,h5 {
   border: outset;
   border-radius:10px;
   
+}
+h2:hover,h3:hover,h4:hover,h5:hover{
+  transition: width 2s;
 }
 
 h6 {
