@@ -83,13 +83,22 @@ header h2 {
   color: #4d0026;
   letter-spacing: 1px;
 }
-
+#infobox{
+  display:block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+#infobox li{
+  display:inline;
+}
 #container{
   display:block;
   width: 620px;
   height:440px;
   margin: 0 auto;
 }
+
 #about,#education,#experience, #other{
   display:none;
   width: 620px;

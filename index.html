@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <link rel="shortcut icon" href="http://www.iconj.com/ico/d/z/dzwucinopk.ico" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,11 +18,19 @@
   </head>
 
   <body>
+    
+    <div id="infobox">
+      <header>
+        <h1>Andrei</h1>
+      </header>
+      <ul>
+          <li><a href="https://soundcloud.com/doubleentandrei/tracks">SoundCloud</a></li>
+          <li><a href="https://www.linkedin.com/in/ungur">LinkedIn</a></li>
+          <li><a href="mailto:andrei.u96@hotmail.com">Contact</a></li>
+      </ul>
+    </div>
     <div id="container">
       <div class="inner">
-        <header>
-          <h1>Andrei</h1>
-        </header>
         <!--section id="downloads" class="clearfix">
           <a href="https://github.com/AndreiUngur/AndreiPage/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
           <a href="https://github.com/AndreiUngur/AndreiPage/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
@@ -32,11 +40,6 @@
         <section id="main_content">
           <p>This page is still under construction. It should be up and running by January.<br>
           Check out these links in the meantime:
-          <ul>
-            <li><a href="https://soundcloud.com/doubleentandrei/tracks">SoundCloud</a></li>
-            <li><a href="https://www.linkedin.com/in/ungur">LinkedIn</a></li>
-            <li><a href="mailto:andrei.u96@hotmail.com">Contact</a></li>
-          </ul></p>
         </section>
         
           <footer>
@@ -65,7 +68,7 @@
       </div>
     </div>
     
-    <script type="text/javascript">
+    <!--script type="text/javascript">
     function unhide(id){
       if (id.style.display=='none'){
         id.style.display='block';
@@ -74,15 +77,7 @@
         id.style.display='none';
       }
     }
-    </script>
-    
-    <script>
-    $(document).ready(function(){
-      $("h2").click(function(){
-        $("#about").slideToggle();
-      });
-    });
-    </script>
+    </script-->
     
     <h2>Object 1</h2> 
     <div id="about">
@@ -92,8 +87,7 @@
       </p>
     </div>
     
-    
-    <h3 onclick="unhide(education)">Object 2</h3> 
+    <h3>Object 2</h3> 
     <div id="education">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
@@ -101,7 +95,7 @@
       </p>
     </div>
     
-    <h4 onclick="unhide(experience)">Object 3</h4> 
+    <h4>Object 3</h4> 
     <div id="experience">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
@@ -109,13 +103,33 @@
       </p>
     </div>
     
-    <h5 onclick="unhide(other)">Object 4</h5> 
+    <h5>Object 4</h5> 
     <div id="other">
       <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
       <p>
         Test Test Test Test Test 
       </p>
     </div>
+    
+    <!-- Makes elements drop down in a sliding fashion -->
+    <!-- To work on: scroll into view -->
+    
+    <script>
+    $(document).ready(function(){
+    $("h2").click(function(){
+        $("#about").slideToggle();
+      });
+    $("h3").click(function(){
+        $("#education").slideToggle();
+      });
+    $("h4").click(function(){
+        $("#experience").slideToggle();
+      });
+    $("h5").click(function(){
+        $("#other").slideToggle();
+      }); 
+    });
+    </script>
     
   </body>
 </html>
