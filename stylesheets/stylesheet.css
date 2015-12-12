@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Made by Andrei Ungur */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -86,6 +83,8 @@ header h2 {
 
 #container{
   min-height: 400px;
+  background : #ffffff;
+  opacity:60%;
 }
 #about,#education,#experience, #other{
   display:none;
