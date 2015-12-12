@@ -93,6 +93,10 @@ header h2 {
   width: 620px;
   margin: 0 auto;
 }
+about p{
+	float:right;
+	margin: 0 0 1em 1em;
+}
 
 .inner {
   width: 620px;
