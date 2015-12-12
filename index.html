@@ -75,12 +75,13 @@
     
     <script type="text/javascript">
     function unhide(id){
+      window.alert(id);
+      window.alert("This");
       var element = document.getElementById(id);
-      window.alert(element.class);
-      if (element.className=="hidden"){
-        element.className="unhidden";
+      if (element.className=='hidden'){
+        element.className='unhidden';
       } else {
-        element.className="hidden";
+        element.className='hidden';
       }
     }
     </script>
