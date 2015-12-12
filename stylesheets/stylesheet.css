@@ -250,7 +250,7 @@ h2,h3,h4,h5 {
   padding:2px;
   text-align:center;
   width: 620px;
-  height:440px;
+  height:0 auto;
   margin: 0 auto;
 }
 
