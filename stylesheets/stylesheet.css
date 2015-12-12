@@ -85,7 +85,7 @@ header h2 {
 }
 
 #container{
-  min-height: 595px;
+  min-height: auto;
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 #about,#education,#experience, #other{
