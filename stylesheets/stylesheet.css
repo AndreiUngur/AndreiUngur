@@ -90,9 +90,7 @@ header h2 {
   height:440px;
   margin: 0 auto;
 }
-#containter .inner li{
-  display:inline;
-}
+
 #about,#education,#experience, #other{
   display:none;
   width: 620px;
