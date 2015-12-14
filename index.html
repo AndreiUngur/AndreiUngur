@@ -113,9 +113,7 @@
     $(document).ready(function(){
     $("h2").click(function(){
         $("#about").slideToggle();
-        if (#about.style.display=="none"){
-            $("#about")[0].scrollIntoView();
-        }
+        $("#about")[0].scrollIntoViewIfNeeded();
       });
     $("h3").click(function(){
         $("#education").slideToggle();
