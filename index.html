@@ -80,7 +80,9 @@
     $("h2").click(function(){
         $("#about").slideToggle();
       });
-    $("#about").scrollIntoView(true);
+    $("h3").click(function(){
+        $("#education").slideToggle("slow");
+      });
     });
     </script>
     
@@ -91,14 +93,6 @@
         Test Test Test Test Test 
       </p>
     </div>
-    
-    <script> 
-    $(document).ready(function(){
-      $("h3").click(function(){
-        $("#education").slideToggle("slow");
-      });
-    });
-    </script>
     
     <h3>Object 2</h3> 
     <div id="education">
