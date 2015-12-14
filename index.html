@@ -112,8 +112,9 @@
     <script>
     $(document).ready(function(){
     $("h2").click(function(){
-        $("#about").slideToggle();
-        $("#about").scrollTop();
+        $("#about").slideToggle({
+        $("#about").scrollIntoView(true);
+        });
       });
     $("h3").click(function(){
         $("#education").slideToggle();
