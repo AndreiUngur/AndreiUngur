@@ -113,6 +113,7 @@
     $(document).ready(function(){
     $("h2").click(function(){
         $("#about").slideToggle();
+        $("#about")[0].scrollIntoView(alignToTop(true)); 
       });
     $("h3").click(function(){
         $("#education").slideToggle();
@@ -122,8 +123,7 @@
       });
     $("h5").click(function(){
         $("#other").slideToggle();
-      });
-    $("#about")[0].scrollIntoView(true);  
+      }); 
     });
     </script>
     
