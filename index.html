@@ -113,7 +113,7 @@
     $(document).ready(function(){
     $("h2").click(function(){
         $("#about").slideToggle();
-        document.getElementById("#about").scrollIntoView();
+        $("#about")[0].scrollIntoView();
       });
     $("h3").click(function(){
         $("#education").slideToggle();
