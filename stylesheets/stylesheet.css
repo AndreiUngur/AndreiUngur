@@ -84,7 +84,10 @@ header h2 {
   letter-spacing: 1px;
 }
 #infobox{
- margin:0 auto;
+  display:block;
+  width: 620px;
+  height:440px;
+  margin: 0 auto;
 }
 #infobox li{
   display:inline;
