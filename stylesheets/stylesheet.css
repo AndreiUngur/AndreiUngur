@@ -100,7 +100,7 @@ header h2 {
   width: 620px;
   height:440px;
   margin:0 auto;
-  top:200px;
+  margin-top:200px;
 }
 
 #about,#education,#experience, #other{
