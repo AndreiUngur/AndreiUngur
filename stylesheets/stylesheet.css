@@ -91,7 +91,6 @@ header h2 {
   left:50%;
   margin-left: -310px;
   text-align:center;
-  clear:both;
 }
 #infobox li{
   display:inline;
@@ -101,6 +100,7 @@ header h2 {
   width: 620px;
   height:440px;
   margin:0 auto;
+  clear:both;
 }
 
 #about,#education,#experience, #other{
