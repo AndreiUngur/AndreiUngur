@@ -86,16 +86,16 @@ header h2 {
 .infobox{
   display:block;
   background-color: #f0f0f5;
-  height:100px;
+  height:150px;
   width:100%;
   text-align:center;
+  margin-bottom:50px;
 }
 .infobox li{
   display:inline;
 }
 #container{
   display:block;
-  height:440px;
   margin:0 auto;
 }
 
