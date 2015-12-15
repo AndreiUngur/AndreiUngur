@@ -94,9 +94,6 @@ header h2 {
 .infobox li{
   display:inline;
 }
-.infobox li:hover{
-  color: white;
-}
 #container{
   display:block;
   margin:0 auto;
