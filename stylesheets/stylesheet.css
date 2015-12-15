@@ -86,13 +86,12 @@ header h2 {
 }
 #infobox{
   display:block;
-  width: 500px;
   height: 200px;
+  position: fixed;
   margin: 0 auto;
 }
 #infobox li{
   display:inline;
-  text-align:center;
 }
 #container{
   display:block;
