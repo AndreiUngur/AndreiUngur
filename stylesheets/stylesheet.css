@@ -87,6 +87,7 @@ header h2 {
   display:block;
   border:outset;
   position: fixed;
+  width:100%;
   left:50%;
   margin-left: -310px;
   text-align:center;
