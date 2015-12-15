@@ -84,6 +84,9 @@ header h2 {
   letter-spacing: 1px;
 }
 
+#infobar li{
+  display:inline;
+}
 #container{
   display:block;
   width: 620px;
