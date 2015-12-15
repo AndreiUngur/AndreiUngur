@@ -93,6 +93,7 @@ header h2 {
 }
 #infobox li{
   display:inline;
+  margin:0 auto;
 }
 #container{
   display:block;
