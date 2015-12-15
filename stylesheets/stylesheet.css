@@ -83,14 +83,14 @@ header h2 {
   color: #4d0026;
   letter-spacing: 1px;
 }
-#infobox{
+.infobox{
   display:block;
   border:outset;
   position: fixed;
   width:100%;
   text-align:center;
 }
-#infobox li{
+.infobox li{
   display:inline;
 }
 #container{
