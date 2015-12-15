@@ -92,6 +92,7 @@ header h2 {
 }
 #infobox li{
   display:inline;
+  text-align:center;
 }
 #container{
   display:block;
