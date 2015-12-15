@@ -83,7 +83,9 @@ header h2 {
   color: #4d0026;
   letter-spacing: 1px;
 }
-
+#infobox{
+ margin:0 auto;
+}
 #infobox li{
   display:inline;
 }
