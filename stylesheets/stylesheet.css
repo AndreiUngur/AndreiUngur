@@ -86,7 +86,7 @@ header h2 {
 .infobox{
   display:block;
   border:outset;
-  width:100%;
+  max-width:100%;
   text-align:center;
 }
 .infobox li{
