@@ -89,7 +89,6 @@ header h2 {
   position: fixed;
   width:100%;
   text-align:center;
-  top:0 auto;
 }
 #infobox li{
   display:inline;
@@ -99,7 +98,6 @@ header h2 {
   width: 620px;
   height:440px;
   margin:0 auto;
-  margin-top:200px;
 }
 
 #about,#education,#experience, #other{
