@@ -90,7 +90,8 @@ header h2 {
   width: 620px;
   border:outset;
   position: fixed;
-  bottom:10px;
+  top:10px;
+  padding:50px;
   margin:auto;
 }
 #infobox li{
