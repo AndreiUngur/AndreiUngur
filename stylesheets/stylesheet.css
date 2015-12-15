@@ -90,16 +90,15 @@ header h2 {
   border:outset;
   position: fixed;
   margin: 0 auto;
+  text-align:center;
 }
 #infobox li{
   display:inline;
-  margin:0 auto;
 }
 #container{
   display:block;
   width: 620px;
   height:440px;
-  margin: 0 auto;
 }
 
 #about,#education,#experience, #other{
