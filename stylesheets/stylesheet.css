@@ -85,7 +85,8 @@ header h2 {
 }
 .infobox{
   display:block;
-  border:outset;
+  background-color: #f0f0f5;
+  height:100px;
   width:100%;
   text-align:center;
 }
