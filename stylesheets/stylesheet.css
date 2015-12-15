@@ -85,13 +85,11 @@ header h2 {
 }
 #infobox{
   display:block;
-  width:620px;
   border:outset;
   position: fixed;
   left:50%;
   margin-left: -310px;
   text-align:center;
-  margin-top:0px;
 }
 #infobox li{
   display:inline;
