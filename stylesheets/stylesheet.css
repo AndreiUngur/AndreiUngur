@@ -64,8 +64,8 @@ a:hover {
 }
 
 header {
-  padding-top: 35px;
-  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 
 header h1 {
@@ -85,9 +85,10 @@ header h2 {
 }
 #infobox{
   display:block;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
+  border:outset;
+  position: fixed;
+  width:100%;
+  text-align:center;
 }
 #infobox li{
   display:inline;
@@ -96,7 +97,7 @@ header h2 {
   display:block;
   width: 620px;
   height:440px;
-  margin: 0 auto;
+  margin:0 auto;
 }
 
 #about,#education,#experience, #other{
