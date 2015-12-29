@@ -259,6 +259,7 @@ h2,h3,h4,h5 {
   padding:5px;
   text-align:center;
   height:0 auto;
+  width: 620px;
   margin-left: 25%;
   background: -moz-radial-gradient(center, ellipse cover, rgba(138,138,138,0.65) 0%, rgba(138,138,138,0) 100%);
   background: -webkit-radial-gradient(center, ellipse cover, rgba(138,138,138,0.65) 0%,rgba(138,138,138,0) 100%);
@@ -266,7 +267,6 @@ h2,h3,h4,h5 {
   border: outset;
   border-radius:10px;
   transition: width 0.2s;
-  display:inline;
   
 }
 h2:hover,h3:hover,h4:hover,h5:hover{
