@@ -273,6 +273,9 @@ h2,h3,h4,h5 {
   display:inline-block;
   
 }
+#headers{
+  text-align:center;
+}
 h2:hover,h3:hover,h4:hover,h5:hover{
 }
 
