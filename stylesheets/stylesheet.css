@@ -97,6 +97,7 @@ header h2 {
 #container{
   display:block;
   margin:0 auto;
+  padding:20px;
 }
 
 #about,#education,#experience, #other{
