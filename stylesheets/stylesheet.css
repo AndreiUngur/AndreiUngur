@@ -105,6 +105,9 @@ header h2 {
   height:440px;
   margin: 0 auto;
 }
+#etc{
+  padding:20px;
+}
 
 #about img,#education img,#experience img,#other img{
 	float:right;
