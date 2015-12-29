@@ -262,8 +262,8 @@ h2,h3,h4,h5 {
   height:0 auto;
   width:0 auto;
   /*for the padding: 23px worked really well, but the outcome is stylistically different.*/
-  padding-left:19px;
-  padding-right:19px;
+  padding-left:18px;
+  padding-right:18px;
   border-bottom: outset;
   border-radius:10px;
   transition: background 0.2s;
