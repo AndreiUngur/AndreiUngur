@@ -35,6 +35,45 @@
       <div class="inner">
 
         <section id="main_content">
+          
+            <h2>Object 1</h2> 
+              <div id="about">
+                <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
+                <p> Test Test Test Test Test </p>
+                </div>
+            <h3>Object 2</h3>
+              <div id="education">
+                <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
+                <p> Test Test Test Test Test </p>
+              </div>
+            <h4>Object 3</h4> 
+              <div id="experience">
+                <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
+                <p> Test Test Test Test Test </p>
+              </div>
+            <h5>Object 4</h5> 
+              <div id="other">
+                <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
+                <p> Test Test Test Test Test </p>
+              </div>
+        <!-- Makes elements drop down in a sliding fashion -->
+        <!-- To work on: scroll into view -->
+        <script>
+        $(document).ready(function(){
+          $("h2").click(function(){
+            $("#about").slideToggle();
+          });
+        $("h3").click(function(){
+          $("#education").slideToggle();
+          });
+        $("h4").click(function(){
+          $("#experience").slideToggle();
+          });
+        $("h5").click(function(){
+          $("#other").slideToggle();
+          }); 
+        });
+        </script>
           <p>
           <script type="text/javascript">
           var text = prompt("Hello, what is your name?");
@@ -75,57 +114,6 @@
     }
     </script-->
     
-    <h2>Object 1</h2> 
-    <div id="about">
-      <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
-      <p>
-        Test Test Test Test Test 
-      </p>
-    </div>
-    
-    <h3>Object 2</h3> 
-    <div id="education">
-      <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
-      <p>
-        Test Test Test Test Test 
-      </p>
-    </div>
-    
-    <h4>Object 3</h4> 
-    <div id="experience">
-      <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
-      <p>
-        Test Test Test Test Test 
-      </p>
-    </div>
-    
-    <h5>Object 4</h5> 
-    <div id="other">
-      <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;">
-      <p>
-        Test Test Test Test Test 
-      </p>
-    </div>
-    
-    <!-- Makes elements drop down in a sliding fashion -->
-    <!-- To work on: scroll into view -->
-    
-    <script>
-    $(document).ready(function(){
-    $("h2").click(function(){
-        $("#about").slideToggle();
-      });
-    $("h3").click(function(){
-        $("#education").slideToggle();
-      });
-    $("h4").click(function(){
-        $("#experience").slideToggle();
-      });
-    $("h5").click(function(){
-        $("#other").slideToggle();
-      }); 
-    });
-    </script>
     
   </body>
 </html>
