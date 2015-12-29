@@ -97,7 +97,6 @@ header h2 {
 #container{
   display:block;
   margin:0 auto;
-  padding:20px;
 }
 
 #about,#education,#experience, #other{
@@ -268,6 +267,7 @@ h2,h3,h4,h5 {
   border: outset;
   border-radius:10px;
   transition: width 0.2s;
+  padding:20px;
   
 }
 h2:hover,h3:hover,h4:hover,h5:hover{
