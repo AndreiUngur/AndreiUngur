@@ -51,6 +51,10 @@ body {
   line-height: 1.5;
   background: rgb(245,245,245);
 }
+p.small{
+  font-size:12px;
+  line-height:50%;
+}
 
 header {
   padding-top: 25px;
