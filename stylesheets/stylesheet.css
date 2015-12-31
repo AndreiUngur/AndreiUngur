@@ -53,7 +53,7 @@ body {
 }
 p.small{
   font-size:12px;
-  line-height:50%;
+  line-height:0.5;
 }
 
 header {
