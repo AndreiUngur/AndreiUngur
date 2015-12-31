@@ -51,6 +51,9 @@ body {
   line-height: 1.5;
   background: rgb(245,245,245);
 }
+p.big{
+ margin-bottom:0;	
+}
 p.small{
   font-size:12px;
   margin-top:0;
