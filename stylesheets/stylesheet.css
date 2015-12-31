@@ -119,6 +119,7 @@ header h2 {
 
 #about img,#education img,#experience img,#other img{
 	float:right;
+	clear:right;
 }
 
 .inner {
