@@ -84,7 +84,7 @@ header h2 {
 .infobox li{
   display:inline;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif ;
-  color: #000000;
+  color: red;
   opacity:0.5;
   transition: opacity 0.2s;
 }
