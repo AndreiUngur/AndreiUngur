@@ -84,11 +84,13 @@
         $("h5").click(function(){
           $("#other").slideToggle();
           $("#education, #experience, #about").hide();
-          }); 
+          });
         });
         </script>
         <div id="etc">
-          <p>
+          
+          <!-- Hide this if any of the sections is opened -->
+          <p class="usermessage">
           <script type="text/javascript">
         if (localStorage.getItem('user')==null){
           var text = prompt("Hello, what is your name?");
