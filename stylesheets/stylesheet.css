@@ -53,13 +53,6 @@ body {
   background: rgb(245,245,245);
 }
 
-a {
-  color: #d5000d;
-}
-a:hover {
-  color: #c5000c;
-}
-
 header {
   padding-top: 25px;
   padding-bottom: 15px;
