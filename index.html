@@ -86,6 +86,7 @@
         <div id="etc">
           <p>
           <script type="text/javascript">
+        if (typeof user !== 'undefined' && user!==null){
           var text = prompt("Hello, what is your name?");
           var valid=true;
             if (text!=null){
@@ -96,12 +97,16 @@
                   }
                 }
               }
-              if (text=="" || text.length<2 || !valid){
+              if (!valid){
                 document.write("You have entered an invalid name! ");
               } else {
+                localStorage.setItem('user', text);
                 document.write("Hi "+text+"! ");
               }
             }
+          } else {
+            document.write("Hi "+localStorage.getItem('user'));
+          }
             document.write("I am currently building the page. The elements are all clickable!");
           </script>
           </p>
