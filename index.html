@@ -86,7 +86,7 @@
         <div id="etc">
           <p>
           <script type="text/javascript">
-        if (typeof user == 'undefined'){
+        if (localStorage.get('user')==null){
           var text = prompt("Hello, what is your name?");
           var valid=true;
             if (text!=null){
