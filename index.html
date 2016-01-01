@@ -82,7 +82,7 @@
         <script>
         $(document).ready(function(){
           $("h2").click(function(){
-            $("#about").slideToggle();
+            $("#about").slideToggle().delay(2000);
             $("#etc").show();
             if ($("#about").css("display")=="block"){
               $("#etc").hide();
