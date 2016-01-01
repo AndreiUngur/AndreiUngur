@@ -63,7 +63,7 @@ p.small{
   margin-top:0;
 }
 
-#about p,#experience p,p.usermessage{
+#about p,#experience p,p.usermessage,#other p{
   text-align:justify;	
 }
 #about img{
