@@ -83,9 +83,8 @@
         $(document).ready(function(){
           $("h2").click(function(){
             $("#about").slideToggle();
-            $("#etc").show();
-            if ($("#about").css("display")=="block"){
-              $("#etc").hide();
+            if ($("#about").css("display")=="none"){
+              $("#etc").show();
             }
             $("#education, #experience, #other").hide();
           });
