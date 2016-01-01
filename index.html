@@ -116,7 +116,7 @@
             $("#about").slideToggle();
             $("#etc").hide();
             setTimeout(function(){if ($("#about").css("display")!="block"){
-              $("#etc").show();
+              $("#etc").fadeIn();
             }},500);
             $("#education, #experience, #other").hide();
           });
