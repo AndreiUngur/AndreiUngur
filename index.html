@@ -82,10 +82,10 @@
         <script>
         $(document).ready(function(){
           $("h2").click(function(){
-            $("#about").slideToggle().delay(2000);
-            $("#etc").show();
-            if ($("#about").css("display")=="block"){
-              $("#etc").hide();
+            $("#about").slideToggle();
+            $("#etc").hide();
+            if ($("#about").css("display")!=="block"){
+              $("#etc").show();
             }
             $("#education, #experience, #other").hide();
           });
