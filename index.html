@@ -98,12 +98,13 @@
             $("#education, #experience, #about").hide();
           });
           if( $("#about,#education,#experience,#other").css('display') == 'block') {
-            $("p.usermessage").hide();
+            $("#etc").hide();
           } else {
-            $("p.usermessage").show();
+            $("#etc").show();
           }
         });
         </script>
+        
         <div id="etc">
           
           <!-- Hide this if any of the sections is opened -->
