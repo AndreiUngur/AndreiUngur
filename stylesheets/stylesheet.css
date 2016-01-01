@@ -92,6 +92,7 @@ header h2 {
   color: #4d0026;
   letter-spacing: 1px;
 }
+
 .infobox{
   display:block;
   background-color: #dcdce6;
@@ -102,6 +103,7 @@ header h2 {
 }
 .infobox li{
   display:inline;
+  text-align:center;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif ;
   color: red;
   opacity:0.5;
