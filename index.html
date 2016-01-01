@@ -77,6 +77,37 @@
                 <p style="text-indent: 50px;"> As the link to my Soundcloud suggests, I am also passionate about music. I play guitar and sing, and am working on an album. For the moment, only two of the songs that will be on it are available on my Soundcloud.</p>
                 <img src="http://i.imgur.com/p1HRh7x.png?1" alt="logo" style="width:220px;height:220px;padding-left:200px;padding-right:200px;">
               </div>
+        
+        <div id="etc">
+          <!-- Hide this if any of the sections is opened -->
+          <p class="usermessage" style="text-indent:50px;">
+          <script type="text/javascript">
+        if (localStorage.getItem('user')==null){
+          var text = prompt("Hello, what is your name?");
+          var valid=true;
+            if (text!=null){
+              for (i=0;i<text.length-1;i++){
+                if (!(text.toUpperCase().charAt(i)>='A' && text.toUpperCase().charAt(i)<='Z')){
+                  if (i<=2 && text.charAt(i)==' ' || text.charAt(i)!=' '){ //The first elements can't be a space, and spaces are accepted.
+                    valid=false;
+                  }
+                }
+              }
+              if (!valid){
+                document.write("You have entered an invalid name! ");
+              } else {
+                localStorage.setItem('user', text);
+                document.write("Hi "+text+"! ");
+              }
+            }
+          } else {
+            document.write("Hi "+localStorage.getItem('user')+" ! ");
+          }
+            document.write("This page was created by Andrei Ungur, a first year Software Engineering student of McGill University, using GitHub/HTML5/JQuery/Javascript/CSS . Click on any of the tabs above for more information.");
+          </script>
+          </p>
+        </div>
+        
         <!-- Makes elements drop down in a sliding fashion -->
         <!-- To work on: scroll into view -->
         <script>
@@ -113,37 +144,8 @@
         });
         </script>
         
-        <div id="etc">
-          
-          <!-- Hide this if any of the sections is opened -->
-          <p class="usermessage" style="text-indent:50px;">
-          <script type="text/javascript">
-        if (localStorage.getItem('user')==null){
-          var text = prompt("Hello, what is your name?");
-          var valid=true;
-            if (text!=null){
-              for (i=0;i<text.length-1;i++){
-                if (!(text.toUpperCase().charAt(i)>='A' && text.toUpperCase().charAt(i)<='Z')){
-                  if (i<=2 && text.charAt(i)==' ' || text.charAt(i)!=' '){ //The first elements can't be a space, and spaces are accepted.
-                    valid=false;
-                  }
-                }
-              }
-              if (!valid){
-                document.write("You have entered an invalid name! ");
-              } else {
-                localStorage.setItem('user', text);
-                document.write("Hi "+text+"! ");
-              }
-            }
-          } else {
-            document.write("Hi "+localStorage.getItem('user')+" ! ");
-          }
-            document.write("This page was created by Andrei Ungur, a first year Software Engineering student of McGill University, using GitHub/HTML5/JQuery/Javascript/CSS . Click on any of the tabs above for more information.");
-          </script>
-          </p>
-        </div>
         </section>
+        
         
           <footer>
           <!--Andreipage is maintained by https://github.com/AndreiUngur-->
