@@ -114,7 +114,7 @@
         $(document).ready(function(){
           $("h2").click(function(){
             $("#about").slideToggle();
-            $("#etc").toggle();
+            $("#etc").show();
             if ($("#about").css("display")=="block"){
               $("#etc").hide();
             }
@@ -122,26 +122,14 @@
           });
           $("h3").click(function(){
             $("#education").slideToggle();
-            $("#etc").show();
-            if ($("#education").css("display")=="block"){
-              $("#etc").toggle();
-            }
             $("#about, #experience, #other").hide();
           });
           $("h4").click(function(){
             $("#experience").slideToggle();
-            $("#etc").show();
-            if ($("#experience").css("display")=="block"){
-              $("#etc").toggle();
-            }
             $("#education, #about, #other").hide();
           });
           $("h5").click(function(){
             $("#other").slideToggle();
-            $("#etc").show();
-            if ($("#other").css("display")=="block"){
-              $("#etc").toggle();
-            }
             $("#education, #experience, #about").hide();
           });
         });
