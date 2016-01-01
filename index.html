@@ -83,39 +83,23 @@
         $(document).ready(function(){
           $("h2").click(function(){
             $("#about").slideToggle();
+            $("#etc").toggle();
             $("#education, #experience, #other").hide();
-            if( $("#about").css('display') == 'block'){
-              $("#etc").hide();
-            } else {
-              $("#etc").show();
-            }
           });
           $("h3").click(function(){
             $("#education").slideToggle();
+            $("#etc").toggle();
             $("#about, #experience, #other").hide();
-            if( $("#education").css('display') == 'block'){
-              $("#etc").hide();
-            } else {
-              $("#etc").show();
-            }
           });
           $("h4").click(function(){
             $("#experience").slideToggle();
+            $("#etc").toggle();
             $("#education, #about, #other").hide();
-            if( $("#experience").css('display') == 'block'){
-              $("#etc").hide();
-            } else {
-              $("#etc").show();
-            }
           });
           $("h5").click(function(){
             $("#other").slideToggle();
+            $("#etc").toggle();
             $("#education, #experience, #about").hide();
-            if( $("#other").css('display') == 'block'){
-              $("#etc").hide();
-            } else {
-              $("#etc").show();
-            }
           });
           
 
