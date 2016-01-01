@@ -73,6 +73,7 @@ p.small{
 header {
   padding-top: 25px;
   padding-bottom: 15px;
+  text-align:center;
 }
 
 header h1 {
@@ -81,6 +82,7 @@ header h1 {
   line-height: 1.2;
   color: #4d0026;
   letter-spacing: 1px;
+  text-align:center;
 }
 
 header h2 {
