@@ -85,18 +85,23 @@
             $("#about").slideToggle();
             $("#education, #experience, #other").hide();
           });
-        $("h3").click(function(){
-          $("#education").slideToggle();
-          $("#about, #experience, #other").hide();
+          $("h3").click(function(){
+            $("#education").slideToggle();
+            $("#about, #experience, #other").hide();
           });
-        $("h4").click(function(){
-          $("#experience").slideToggle();
-          $("#education, #about, #other").hide();
+          $("h4").click(function(){
+            $("#experience").slideToggle();
+            $("#education, #about, #other").hide();
           });
-        $("h5").click(function(){
-          $("#other").slideToggle();
-          $("#education, #experience, #about").hide();
+          $("h5").click(function(){
+            $("#other").slideToggle();
+            $("#education, #experience, #about").hide();
           });
+          if( $("#about,#education,#experience,#other").css('display') == 'block') {
+            $("p.usermessage").hide();
+          } else {
+            $("p.usermessage").show();
+          }
         });
         </script>
         <div id="etc">
@@ -123,7 +128,7 @@
               }
             }
           } else {
-            document.write("Hi "+localStorage.getItem('user')+"! ");
+            document.write("Hi "+localStorage.getItem('user')+" ! ");
           }
             document.write("This page was created by Andrei Ungur, a first year Software Engineering student of McGill University, using GitHub/HTML5/JQuery/Javascript/CSS . Click on any of the tabs above for more information.");
           </script>
