@@ -63,6 +63,10 @@ p.small{
   margin-top:0;
 }
 
+#about p{
+  text-align:justify;	
+}
+
 header {
   padding-top: 25px;
   padding-bottom: 15px;
