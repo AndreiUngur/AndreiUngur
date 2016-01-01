@@ -118,20 +118,35 @@
             setTimeout(function(){if ($("#about").css("display")=="block"){
               $("#etc").hide();
               alert("It's on");
-            }},2000);
+            }},500);
             $("#education, #experience, #other").hide();
           });
           $("h3").click(function(){
             $("#education").slideToggle();
             $("#about, #experience, #other").hide();
+            $("#etc").show();
+            setTimeout(function(){if ($("#education").css("display")=="block"){
+              $("#etc").hide();
+              alert("It's on");
+            }},500);
           });
           $("h4").click(function(){
             $("#experience").slideToggle();
             $("#education, #about, #other").hide();
+            $("#etc").show();
+            setTimeout(function(){if ($("#experience").css("display")=="block"){
+              $("#etc").hide();
+              alert("It's on");
+            }},500);
           });
           $("h5").click(function(){
             $("#other").slideToggle();
             $("#education, #experience, #about").hide();
+            $("#etc").show();
+            setTimeout(function(){if ($("#other").css("display")=="block"){
+              $("#etc").hide();
+              alert("It's on");
+            }},500);
           });
         });
         </script>
