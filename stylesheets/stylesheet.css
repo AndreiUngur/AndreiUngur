@@ -62,9 +62,6 @@ p.small{
   opacity:0.9;
   margin-top:0;
 }
-p.usermessage{
-   display:none;
-}
 
 #about p,#experience p,p.usermessage{
   text-align:justify;	
