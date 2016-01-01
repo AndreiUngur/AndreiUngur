@@ -248,7 +248,7 @@ h2,h3,h4,h5 {
   text-align:center;
 }
 h2:hover,h3:hover,h4:hover,h5:hover{
-  background: rgba(171,171,171,0.5);
+  background: rgba(170,170,255,0.5);
 }
 
 h6 {
