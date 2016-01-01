@@ -83,7 +83,7 @@
         $(document).ready(function(){
           $("h2").click(function(){
             $("#about").slideToggle();
-            $("#etc").hide();
+            $("#etc").hide().delay(500);
             if ($("#about").css("display")!="block"){
               $("#etc").show();
             }
