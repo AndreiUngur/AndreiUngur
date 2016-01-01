@@ -76,10 +76,10 @@ header {
 }
 
 header h1 {
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Georgia', serif;
   font-size: 48px; font-weight: 900;
   line-height: 1.2;
-  color: #4d0026;
+  color: #ffffff;
   letter-spacing: 1px;
   margin-left:40px;
 }
@@ -94,7 +94,7 @@ header h2 {
 
 .infobox{
   display:block;
-  background-color: #dcdce6;
+  background-color: #000033;
   height:125px;
   width:100%;
   text-align:center;
