@@ -85,10 +85,10 @@ header h1 {
 }
 
 header h2 {
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Georgia', serif;
   font-size: 24px; font-weight: 900;
   line-height: 1.2;
-  color: #4d0026;
+  color: #000033;
   letter-spacing: 1px;
 }
 
@@ -226,10 +226,10 @@ h1 {
 
 h2,h3,h4,h5 {
   top:15px;
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Georgia', serif;
   font-size: 24px; font-weight: 600;
   line-height: 1.2;
-  color: #80003f;
+  color: #000066;
   letter-spacing: 1px;
   padding:5px;
   text-align:center;
