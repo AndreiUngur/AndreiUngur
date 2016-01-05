@@ -93,9 +93,11 @@
             if (text!=null){
               for (i=0;i<text.length-1;i++){
                 if (!(text.toUpperCase().charAt(i)>='A' && text.toUpperCase().charAt(i)<='Z')){
-                  if (text.charAt(i)!=' '){ //Hyphens and spaces are accepted
-                    valid=false;
-                  } else if(text.charAt(i)!='-'){
+                  if (text.charAt(i)==' '){ //Hyphens and spaces are accepted
+                    continue;
+                  } else if(text.charAt(i)=='-'){
+                    continue;
+                  } else {
                     valid=false;
                   }
                 }
