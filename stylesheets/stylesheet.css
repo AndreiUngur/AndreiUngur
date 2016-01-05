@@ -308,6 +308,7 @@ footer {
 }
 
 footer a {
+  text-align:center;
   color: #666;
 }
 footer a:hover {
