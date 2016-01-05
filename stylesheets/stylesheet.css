@@ -297,9 +297,8 @@ dl dt {
 }
 /* At the moment there is no footer*/
 footer {
-  padding-top: 20px;
+  padding-top: 15px;
   /*padding-bottom: 30px;*/
-  margin-top: 10px;
   font-size: 13px;
   font-family: Helvetica;
   color: #330000;
