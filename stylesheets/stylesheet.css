@@ -305,7 +305,7 @@ footer {
   color: #330000;
   opacity: 0.8;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
-  text-align:center;
+  width:100%;
 }
 
 footer a {
