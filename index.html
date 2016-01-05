@@ -93,7 +93,7 @@
             if (text!=null){
               for (i=0;i<text.length-1;i++){
                 if (!(text.toUpperCase().charAt(i)>='A' && text.toUpperCase().charAt(i)<='Z')){
-                  if (i<=2 && text.charAt(i)==' ' || text.charAt(i)!=' ' || text.charAt(i)!='-'){ //The first elements can't be a space, and spaces/hyphens are accepted.
+                  if ((i<=2 && text.charAt(i)==' ') || !(text.charAt(i)==' ') || !(text.charAt(i)=='-')){ //The first elements can't be a space, and spaces/hyphens are accepted.
                     valid=false;
                   }
                 }
