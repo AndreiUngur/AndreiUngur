@@ -26,6 +26,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	-webkit-text-stroke-width: 0.2px;
+  	-webkit-text-stroke-color: black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 ol, ul {
 	list-style: none;
@@ -74,14 +78,26 @@ p.small{
    margin-left:20px;
    margin-top:35px;
 }
+.description{
+padding-top:20px;
+padding-bottom:20px;
+float:right;
+border-left:solid;
+border-color:rgba(0,0,0,0.5);
+width:50%;
+background-color:rgba(0,0,51,0.2);
+padding-left:20px;
+margin:20px;
+height: 120px;
+}
 header {
   padding-top: 25px;
   padding-bottom: 15px;
 }
 
 header h1 {
-  font-family: 'Georgia', serif;
-  font-size: 48px; font-weight: 900;
+  font-family: 'Verdana', sans-serif;
+  font-size: 48px; font-weight: 500;
   line-height: 1.2;
   color: #ffffff;
   letter-spacing: 1px;
@@ -89,7 +105,7 @@ header h1 {
 }
 
 header h2 {
-  font-family: 'Georgia', serif;
+  font-family: 'Verdana', sans-serif;
   font-size: 24px; font-weight: 900;
   line-height: 1.2;
   color: #000033;
@@ -99,7 +115,7 @@ header h2 {
 .infobox{
   display:block;
   background-color: #000033;
-  height:125px;
+  height:100%px;
   width:100%;
   text-align:center;
   margin-bottom:50px;
@@ -122,7 +138,6 @@ header h2 {
 
 #about,#education,#experience, #other{
   display:none;
-  width: 620px;
   height:100%;
   margin: 0 auto;
   padding-top:20px;
@@ -135,9 +150,12 @@ header h2 {
   padding:20px;
 }
 
-#about img,#education img,#experience img,#other img{
+#about img,#education img,#experience img{
 	float:right;
 	clear:right;
+}
+#other img{
+	float:left;
 }
 
 .inner {
@@ -225,12 +243,12 @@ form {
 /* GENERAL ELEMENT TYPE STYLES */
 
 h1 {
-  font-size: 32px;
+  font-size: 80%;
 }
 
 h2,h3,h4,h5 {
   top:15px;
-  font-family: 'Georgia', serif;
+  font-family: 'Verdana', sans-serif;
   font-size: 24px; font-weight: 600;
   line-height: 1.2;
   color: #000066;
