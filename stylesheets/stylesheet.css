@@ -78,6 +78,9 @@ p.small{
    margin-left:20px;
    margin-top:35px;
 }
+.projectBox{
+	border:1px;
+}
 header {
   padding-top: 25px;
   padding-bottom: 15px;
