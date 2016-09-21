@@ -79,7 +79,8 @@ p.small{
    margin-top:35px;
 }
 .projectBox{
-	border:10px;
+	border: solid;
+	border-width:1px;
 }
 header {
   padding-top: 25px;
