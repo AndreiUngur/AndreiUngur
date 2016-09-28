@@ -163,6 +163,10 @@ header h2 {
   max-width: 100%;
   margin-bottom:50px;
 }
+.projet{
+	max-width:100%;
+	float:left;
+}
 
 code, pre {
   margin-bottom: 30px;
