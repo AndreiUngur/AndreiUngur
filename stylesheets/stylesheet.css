@@ -149,9 +149,12 @@ header h2 {
   padding:20px;
 }
 
-#about img,#education img,#experience img,#other img{
+#about img,#education img,#experience img{
 	float:right;
 	clear:right;
+}
+#other img{
+	float:left;
 }
 
 .inner {
@@ -162,10 +165,6 @@ header h2 {
 #container .inner img {
   max-width: 100%;
   margin-bottom:50px;
-}
-.projet{
-	max-width:100%;
-	float:left;
 }
 
 code, pre {
