@@ -89,6 +89,7 @@ background-color:rgba(0,0,51,0.2);
 padding-left:20px;
 margin:20px;
 height: 120px;
+overflow:auto;
 }
 header {
   padding-top: 25px;
