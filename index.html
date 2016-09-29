@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
     <link rel="shortcut icon" href="http://www.iconj.com/ico/d/z/dzwucinopk.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   
@@ -20,12 +21,12 @@
 
   <body>
     
-    <div id="container" class="row">
+    <div id="container">
         <div class="infobox">
           <header>
             <h1>Andrei Ungur</h1>
           </header>
-        <ul>
+        <ul class="links">
             <li><a href="https://www.linkedin.com/in/ungur" style="color:#ffffff">LinkedIn</a></li>
             <li><a href="mailto:andrei.ungur@mail.mcgill.ca" style="color:#ffffff">Contact</a></li>
             <li><a href="https://soundcloud.com/doubleentandrei/tracks" style="color:#ffffff">SoundCloud</a></li>
@@ -36,12 +37,10 @@
 
         <section id="main_content">
           <div id="headers">
-            <div class="row">
-              <h2>About Me</h2>
-              <h3>Education</h3>
-              <h4>Experience</h4>
-              <h5>Projects</h5>
-            </div>
+             <h2 id="am">About Me</h2>
+             <h2 id="ed">Education</h2>
+             <h2 id="ex">Experience</h2>
+             <h2 id="pj">Projects</h2>
           </div>
               <div id="about">
                 <!-- This part seems to have messy indentation when clicking "view source" on the webpage, but in github it's more organized.-->
@@ -74,6 +73,7 @@
                   <br>
                   <li>In March 2016, I contributed to the creation of a Strategy Game using C# and Unity3D as part of yet another hackathon: McGame Jam.</li>
                 </ul>
+                <p>The code behind these events is unavailable, but more content can be found under "projects"!</p>
                 <p class="big" style="text-align:center;">Volunteering</p>
                 <p>From September 2013 to March 2016, I was a member of Saint-John Ambulance, a volunteering organization whose mission is to provide first aid for various events ranging from local hockey tournaments to Bell Center shows.</p>
                 <ul>
@@ -81,10 +81,19 @@
                   <br>
                   <li>As a First Responder, I provided first aid at over 20 events ranging from local hockey tournaments to Bell Center shows.</li>
                 </ul>
-                <img src="http://www.sja.ca/English/_layouts/images/masterPage_SJA/img/logo.png" alt="sja" style="float:top;width:400px;height:125px;padding-left:50px;padding-right:50px;margin-right:60px;">
+                <img src="http://www.sja.ca/English/_layouts/images/masterPage_SJA/img/logo.png" alt="sja" style="float:top;width:50%;height:30%;margin-left:10%;margin-right:30%;margin-bottom:5%;">
                 
                 <p class="big" style="text-align:center;clear:both;">Work</p>
-                <p>In august 2014, I became a mathematics tutor for Cégep-level students at Collège Jean-de-Brébeuf until may 2015.</p>
+                <img src="images/aircan.jpg" alt="Air Canada Logo" style="float:right;padding-right:60px;width:25%;height:25%;padding-left:5%;">
+                <p>From June to September 2016, I was a Customer Service and Sales Representative for Air Canada.</p>
+                <ul>
+                  <li>Controlled the flow of 2000-3000 passengers daily.</li>
+                  <br>
+                  <li>Oversaw the swift check-in of 100+ passengers daily.</li>
+                  <br>
+                  <li>Handled customer complaints and concerns with accurate and professional explanations.</li>
+                </ul>
+                <p>In August 2014, I became a mathematics tutor for Cégep-level students at Collège Jean-de-Brébeuf until may 2015.</p>
                 <ul>
                   <li>Assisted a total of 4 Cégep level students, one hour per week per student, over two semesters, to master the concepts covered in Calculus I and II.</li>
                   <br>
@@ -92,7 +101,6 @@
                   <br>
                   <li>Committed to answering their questions in a timely and detailed manner, even outside of the tutoring hours.</li>
                 </ul>
-                <img src="http://tinyurl.com/websitepfdslogo" alt="pfds" style="float:left;width:220px;height:220px;margin-top:20px;padding-right:60px;">
                 <p>I’ve also worked as a day camp counsellor for three summers (2012-2014).</p>
                 <ul>
                   <li>Lead groups of 10 to 50 children of ages 5-12 for three summers (6 months in total).</li>
@@ -106,10 +114,12 @@
               
               <div id="other">
                 <p> Above, you may find links containing the following two ways to contact me: <br> <ul><li><a href="mailto:andrei.ungur@mail.mcgill.ca">By e-mail</a>;</li><li><a href="https://www.linkedin.com/in/ungur">Through LinkedIn.</a></li></ul></p>
-                <p> Below are other projects I have worked on </p>
+                <p> Below are other projects I have worked on. Clicking on the images will provide you with the source content mentionned on the right.</p>
                 <div class="container">
                     <div class="description">
-                      Project 1
+                      <a style="font-size:18px;">McGill Engineering Competition</a>
+                      <br>
+                      <p>As the Information Technologies director for the 2016 edition of the McGill Engineering Competition, I handle the 2016 edition of the website.</p>
                     </div>
                     <div class="project">
                       <a href="http://mec.mcgilleus.ca/">
@@ -117,26 +127,29 @@
                       </a>
                     </div>
                     <br>
-                    <div class="description">
-                      Project 2
+                    <div class="description" style="height:200px;">
+                      <a style="font-size:18px;">Puzzle solver</a>
+                      <br>
+                      <p>As part of one of my University courses, I had to code a puzzle solver for peg solitaire. My work implements queues as well as a greedy breadth-first search to return a description of the least amount of steps required to get from any combination of the puzzle to that pictured here.</p>
                     </div>
                     <div class="project">
+                      <a href="https://raw.githubusercontent.com/AndreiUngur/AndreiPage/gh-pages/code/solver.java">
+                        <img src="images/peg.jpg" alt="Peg solitaire" width="280" height="200" style="margin-left: 5%; margin-top:5%">
+                      </a>
                     </div>
                     <br>
                     <div class="description">
-                      Project 3
+                      <a style = "font-size:18px;">Music</a>
+                      <br>
+                      <p>In my spare time, I also play guitar and record songs. Only two of my recordings have made it to my soundcloud account for the moment, but there will be more to come!</p>
                     </div>
                     <div class="project">
+                      <audio controls style="float:left; margin-top:15%;"> 
+                        <source src="audio/sampleSpring.mp3" type="audio/mpeg">
+                      </audio>
                     </div>
-                    <br>
-                    <div class="description">
-                      Project 4
-                    </div>
-                    <div class="project">
-                    </div>
-                    <br>
                   </div>
-                </div>
+              </div>
         
         <div id="etc">
           <!-- Hide this if any of the sections is opened -->
@@ -176,7 +189,7 @@
         <!-- To work on: scroll into view -->
         <script>
         $(document).ready(function(){
-          $("h2").click(function(){
+          $("#am").click(function(){
             $("#about").slideToggle();
             $("#etc").hide();
             setTimeout(function(){if ($("#about").css("display")!="block"){
@@ -184,7 +197,7 @@
             }},500);
             $("#education, #experience, #other").hide();
           });
-          $("h3").click(function(){
+          $("#ed").click(function(){
             $("#education").slideToggle();
             $("#about, #experience, #other").hide();
             $("#etc").hide();
@@ -192,7 +205,7 @@
               $("#etc").fadeIn();
             }},500);
           });
-          $("h4").click(function(){
+          $("#ex").click(function(){
             $("#experience").slideToggle();
             $("#education, #about, #other").hide();
             $("#etc").hide();
@@ -200,7 +213,7 @@
               $("#etc").fadeIn();
             }},500);
           });
-          $("h5").click(function(){
+          $("#pj").click(function(){
             $("#other").slideToggle();
             $("#education, #experience, #about").hide();
             $("#etc").hide();
@@ -214,9 +227,9 @@
         </section>
         
         
-          <footer>
+         <!--footer>
           <!--Andreipage is maintained by https://github.com/AndreiUngur-->
-        </footer>
+        </footer-->
       </div>
     </div>
     
