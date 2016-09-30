@@ -50,7 +50,7 @@ table {
 
 /* LAYOUT STYLES */
 body {
-  font-family: 'Helvetica Neue', Helvetica, serif;
+  font-family:'Vollkorn',serif; 
   font-size: 1em;
   color:#00004d;
   line-height: 1.5;
@@ -99,7 +99,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Unica One', cursive;
   font-size: 48px; font-weight: 500;
   line-height: 1.2;
   color: #ffffff;
@@ -107,13 +107,13 @@ header h1 {
   margin-left:40px;
 }
 
-header h2 {
-  font-family: 'Verdana', sans-serif;
+/*header h2 {
+  font-family: 'Unica One', cursive;
   font-size: 24px; font-weight: 900;
   line-height: 1.2;
   color: #000033;
   letter-spacing: 1px;
-}
+}*/
 
 .infobox{
   display:block;
@@ -251,7 +251,7 @@ h1 {
 
 h2,h3,h4,h5 {
   top:15px;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Unica one',cursive;
   font-size: 24px; font-weight: 600;
   line-height: 1.2;
   color: #000066;
@@ -274,6 +274,11 @@ h2,h3,h4,h5 {
 }
 h2:hover,h3:hover,h4:hover,h5:hover{
   background: rgba(170,170,255,0.5);
+  cursor:pointer;
+  /*This text can't be selected */
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
 }
 
 h6 {
