@@ -30,7 +30,6 @@ body {
   	-webkit-text-stroke-color: black;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	height:100%;
 }
 ol, ul {
 	list-style: none;
@@ -147,6 +146,9 @@ header h1 {
   padding-top:20px;
   padding-bottom:50px;
 }
+#other{
+height:1000px;
+}
 #etc{
   padding:20px;
 }
@@ -161,6 +163,7 @@ header h1 {
 
 .inner {
   width: 800px;
+  margin: 0 auto;
 }
 
 #container .inner img {
@@ -247,12 +250,16 @@ h1 {
 }
 
 h2{
+  top:15px;
   font-family: 'Unica one',cursive;
   font-size: 24px; font-weight: 600;
+  line-height: 1.2;
   color: #000066;
   letter-spacing: 1px;
   padding:5px;
   text-align:center;
+  height:0 auto;
+  width:0 auto;
   /*for the padding: 23px worked really well, but the outcome is stylistically different.*/
   padding-left:17px;
   padding-right:17px;
