@@ -124,7 +124,7 @@ header h1 {
   color: red;
   opacity:0.5;
   transition: opacity 0.2s;
-  word-spacing:5%;
+  word-spacing: 10%;
 }
 .infobox li:hover{
    opacity:1.0;
