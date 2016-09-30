@@ -124,13 +124,14 @@ header h1 {
   color: red;
   opacity:0.5;
   transition: opacity 0.2s;
+  word-spacing: 1em;
+
 }
 .infobox li:hover{
    opacity:1.0;
 }
 .infobox ul{
   margin-left:0%;
-  word-spacing: 10%;
 }
 #container{
   display:block;
