@@ -161,6 +161,7 @@ header h1 {
 
 .inner {
   width: 800px;
+  margin-top:0 auto;
 }
 
 #container .inner img {
