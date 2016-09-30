@@ -276,9 +276,13 @@ h2{
 #headers{
   text-align:center;
 }
-h2:hover,h3:hover,h4:hover,h5:hover{
+h2:hover{
   background: rgba(170,170,255,0.5);
   cursor:pointer;
+/*This text can't be selected */
+ -webkit-user-select: none; /* Chrome/Safari */        
+ -moz-user-select: none; /* Firefox */
+ -ms-user-select: none; /* IE10+ */
 }
 
 h6 {
