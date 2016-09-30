@@ -30,6 +30,10 @@ body {
   	-webkit-text-stroke-color: black;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	  /*This text can't be selected */
+  	-webkit-user-select: none; /* Chrome/Safari */        
+ 	-moz-user-select: none; /* Firefox */
+  	-ms-user-select: none; /* IE10+ */
 }
 ol, ul {
 	list-style: none;
@@ -250,9 +254,8 @@ h1 {
 }
 
 h2{
-  top:15px;
   font-family: 'Unica one',cursive;
-  font-size: 24px; font-weight: 600;
+  font-size: 1.5em; font-weight: 600;
   line-height: 1.2;
   color: #000066;
   letter-spacing: 1px;
@@ -268,7 +271,6 @@ h2{
   transition: background 0.2s;
   display:inline-block;
   text-transform:uppercase;
-  
 }
 #headers{
   text-align:center;
@@ -276,10 +278,6 @@ h2{
 h2:hover,h3:hover,h4:hover,h5:hover{
   background: rgba(170,170,255,0.5);
   cursor:pointer;
-  /*This text can't be selected */
-  -webkit-user-select: none; /* Chrome/Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
 }
 
 h6 {
