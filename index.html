@@ -37,10 +37,10 @@
 
         <section id="main_content">
           <div id="headers">
-             <h2>ABOUT ME</h2>
-             <h2>EDUCATION</h2>
-             <h2>EXPERIENCE</h2>
-             <h2>PROJECTS</h2>
+             <h2 id="am">ABOUT ME</h2>
+             <h2 id="ed">EDUCATION</h2>
+             <h2 id="ex">EXPERIENCE</h2>
+             <h2 id="pj">PROJECTS</h2>
           </div>
               <div id="about">
                 <!-- This part seems to have messy indentation when clicking "view source" on the webpage, but in github it's more organized.-->
@@ -189,7 +189,7 @@
         <!-- To work on: scroll into view -->
         <script>
         $(document).ready(function(){
-          $("h2").click(function(){
+          $("#am").click(function(){
             $("#about").slideToggle();
             $("#etc").hide();
             setTimeout(function(){if ($("#about").css("display")!="block"){
@@ -197,7 +197,7 @@
             }},500);
             $("#education, #experience, #other").hide();
           });
-          $("h3").click(function(){
+          $("#ed").click(function(){
             $("#education").slideToggle();
             $("#about, #experience, #other").hide();
             $("#etc").hide();
@@ -205,7 +205,7 @@
               $("#etc").fadeIn();
             }},500);
           });
-          $("h4").click(function(){
+          $("#ex").click(function(){
             $("#experience").slideToggle();
             $("#education, #about, #other").hide();
             $("#etc").hide();
@@ -213,7 +213,7 @@
               $("#etc").fadeIn();
             }},500);
           });
-          $("h5").click(function(){
+          $("#pj").click(function(){
             $("#other").slideToggle();
             $("#education, #experience, #about").hide();
             $("#etc").hide();
