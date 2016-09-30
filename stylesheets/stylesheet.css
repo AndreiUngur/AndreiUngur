@@ -161,7 +161,6 @@ header h1 {
 
 .inner {
   width: 800px;
-  margin: 0 auto;
 }
 
 #container .inner img {
@@ -266,7 +265,6 @@ h2{
 }
 #headers{
   text-align:center;
-  margin-top:
 }
 h2:hover,h3:hover,h4:hover,h5:hover{
   background: rgba(170,170,255,0.5);
