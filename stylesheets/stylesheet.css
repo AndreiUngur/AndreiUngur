@@ -94,7 +94,7 @@ height: 120px;
 overflow:auto;
 }
 header {
-  padding-top: 3%;
+  padding-top: 2.5%;
 }
 
 header h1 {
@@ -132,7 +132,7 @@ header h1 {
   padding-left:0px;
   margin-left:0%;
   word-spacing: 3em;
-  padding-bottom:3%;
+  padding-bottom:2.5%;
 }
 #container{
   display:block;
