@@ -105,7 +105,7 @@ header h1 {
   color: #ffffff;
   letter-spacing: 1px;
   margin-left:40px;
-  text-transform:capitalize;
+  text-transform:uppercase;
 }
 
 .infobox{
@@ -115,7 +115,7 @@ header h1 {
   width:100%;
   text-align:center;
   margin-bottom:50px;
-  text-transform:capitalize;
+  text-transform:uppercase;
 }
 .infobox li{
   display:inline;
@@ -265,7 +265,7 @@ h2{
   border-radius:10px;
   transition: background 0.2s;
   display:inline-block;
-  text-transform:capitalize;
+  text-transform:uppercase;
   
 }
 #headers{
