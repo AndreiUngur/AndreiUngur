@@ -126,13 +126,17 @@ header h1 {
 .infobox li{
   display:inline;
   text-align:center;
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif ;
+  font-family: 'Unica One',cursive;
   color: red;
   opacity:0.5;
   transition: opacity 0.2s;
+  word-spacing:3%;
 }
 .infobox li:hover{
    opacity:1.0;
+}
+.infobox ul{
+  margin-left:0%;
 }
 #container{
   display:block;
