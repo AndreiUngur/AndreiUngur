@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
+    <link rel="shortcut icon" href="http://www.iconj.com/ico/d/z/dzwucinopk.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Andrei Ungur - DNA Sequencer</title>
+
+	</head>
+	<body>
+	    
+	    <div id="container">
+    	    <div class="infobox">
+        	  <header>
+            	<h1>Andrei Ungur</h1>
+          	</header>
+        	<ul class="links">
+            	<li><a href="https://www.linkedin.com/in/ungur" style="color:#ffffff">LinkedIn</a></li>
+            	<li><a href="mailto:andrei.ungur@mail.mcgill.ca" style="color:#ffffff">Contact</a></li>
+            	<li><a href="https://soundcloud.com/doubleentandrei/tracks" style="color:#ffffff">SoundCloud</a></li>
+        	</ul>
+        	</div>
+      	</div>
+      	<div class="inner">
+      		<section id="main_content">
+      			<form>
+					DNA Sequence:<br>
+					<input type="text" id="dnaseq" placeholder="Enter your DNA Sequence here" style="width:50vw;height:3vh"><br>
+      				<input type="button" onclick="desequence()" name="dnasubmit" value="Submit">
+      			</form>
+      			<div style="margin:auto;">
+      				<div id="shift0" style="width:10vw;height:50vh;overflow:scroll;float:left;">
+      				</div>
+      				<div id="shift1" style="width:10vw;height:50vh;overflow:scroll;float:left;">
+      				</div>
+      				<div id="shift2" style="width:10vw;height:50vh;overflow:scroll;float:left;">
+      				</div>
+      				</div>
+      			<script>
+      				function desequence(){
+      					//Get output areas
+      					var outputbox = document.getElementById("shift0");
+      					var outputbox2 = document.getElementById("shift1");
+      					var outputbox3 = document.getElementById("shift2");
+
+      					//Set titles for each and clear past text
+      					outputbox.innerHTML = "Shift of zero:<br><br>";
+      					outputbox2.innerHTML = "Shift of one:<br><br>";
+      					outputbox3.innerHTML = "Shift of two:<br><br>";
+
+      					//Sequence DNA in groups of three
+      					var text = document.getElementById("dnaseq").value;
+      					
+      					var counter;
+      					var shift0=0;
+      					var shift1=0;
+      					var shift2=0;
+      					outputbox2.innerHTML +=text[0]+"<br>";
+      					outputbox3.innerHTML +=text[0]+text[1]+"<br>";
+
+      					for(counter=0;counter<text.length;counter++){
+      						outputbox.innerHTML+=text[counter];
+      						
+      						if(counter>=1){
+      							outputbox2.innerHTML+=text[counter]
+      							shift1++;
+      							if(shift1%3==0){
+      								outputbox2.innerHTML+="<br>";
+      								shift1=0;
+      							}
+      						}
+
+      						if(counter>=2){
+      							outputbox3.innerHTML+=text[counter];
+      							shift2++;
+      							if(shift2%3==0){
+      								outputbox3.innerHTML+="<br>";
+      								shift2=0;
+      							}
+      						}
+
+      						shift0++;
+
+      						if(shift0%3==0){
+      							outputbox.innerHTML+='<br>';
+      							shift0=0;
+      						}
+      					}
+      				}
+      			</script>
+      		</section>
+      	</div>
+      </div>
+</body>
+</html>
