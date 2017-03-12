@@ -145,6 +145,11 @@ h1{
   font-size:2vw;
   text-align:center;
 }
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
 .project audio{
   margin-top:10vh;
 }

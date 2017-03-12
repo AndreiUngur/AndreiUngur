@@ -10,6 +10,8 @@
   <link rel="shortcut icon" href="http://www.iconj.com/ico/d/z/dzwucinopk.ico" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet2.css" media="screen">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Angular -->
+  <script src="scripts/angular/angular.min.js"></script>
   
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,14 +34,14 @@
       </div>
 
       <div class='text-center' data-ng-show="name_input()">
-        <input type="text" id="name_input" data-ng-model="name" placeholder="What is your name? Quel est votre nom?"/><br><br>
+        <input type="text" id="name_input" data-ng-model="name" data-ng-show="!name_is_defined()" data-ng-cloak placeholder="What is your name? Quel est votre nom?"/><br><br>
         <button id="ENG-Select" data-ng-click="setNameEng()"> Continue in English! </button>
         <button id="FR-Select" data-ng-click="setNameFr()"> Continuez en Français! </button>
       </div>
 
-      <div id="main-content" class="text-center" data-ng-show="main_content()">
+      <div id="main-content" class="text-center" data-ng-cloak data-ng-show="main_content()">
 
-        <div id="headers">
+      <div id="headers">
           <h2 id="am" class="active"></h2>
           <h2 id="ed" class="active"></h2>
           <h2 id="ex" class="active"></h2>
@@ -230,17 +232,13 @@
     Might be useless?
   -->
 
-  <!-- Angular -->
-    <script src="scripts/angular/angular.min.js"></script><!--
-    <script src="scripts/angular/angular-route.js"></script>-->
+  <script src="scripts/angular_main.js"></script>
 
-    <script src="scripts/angular_main.js"></script>
+  <!-- Write data in different languages -->
+  <script src="scripts/lang_writer.js"></script>
 
-    <!-- Write data in different languages -->
-    <script src="scripts/lang_writer.js"></script>
-
-    <!-- Validate name -->
-    <script src="scripts/name_validation.js"></script>
+  <!-- Validate name -->
+  <script src="scripts/name_validation.js"></script>
     <!--footer>
       Andreipage is maintained by https://github.com/AndreiUngur
     </footer-->
