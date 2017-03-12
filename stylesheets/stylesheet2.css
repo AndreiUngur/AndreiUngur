@@ -1,0 +1,172 @@
+#about,#education,#experience, #other{
+  display:none;
+}
+
+.about_text{
+  text-align:justify;
+}
+
+.big{
+  font-size: 1.5vw
+}
+
+.big_exp,.big_exp2,.big_exp3{
+  font-size:2.0vw;
+  font-style:bold;
+  margin-top:4vh;
+  margin-bottom:4vh;
+}
+
+.big_exp,.big_exp2,.big_exp3{
+  text-align: center;
+}
+
+body{
+  font-size:1.3vw;
+  line-height: 5vh;
+}
+
+button{
+  border:none;
+  background-color: #B5A6A6;
+  color:#000056;
+  width: 30vw;
+  height:8vh;
+  font-size: 2vw;
+}
+
+button:hover{
+  background-color:#000056;
+  color:#CECECE;
+  transition-duration: 0.5s;
+}
+
+.description{
+  border-left:solid;
+  border-color:rgba(0,0,0,0.5);
+  background-color:rgba(0,0,51,0.2);
+  overflow:auto;
+}
+
+.education_photos{
+  width:8vw;
+}
+
+h1{
+  font-family: 'Unica One', cursive;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform:uppercase;
+  cursor:default;
+}
+
+#am,#ed,#ex,#pj{
+  font-family: 'Unica one',cursive;
+  font-size:2vw;
+  color: #000066;
+  letter-spacing: 1px;
+  padding:5px;
+  text-align:center;
+  width:20vw;
+  /*for the padding: 23px worked really well, but the outcome is stylistically different.*/
+  padding-left:2vw;
+  padding-right:2vw;
+  border-bottom: outset;
+  border-radius:10px;
+  transition: background 0.2s;
+  display:inline-block;
+  text-transform:uppercase;
+}
+
+#am:hover,#ed:hover,#ex:hover,#pj:hover{
+  background: rgba(170,170,255,0.5);
+  cursor:pointer;
+  /*This text can't be selected */
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+
+.infobox li:hover{
+ opacity:1.0;
+ cursor:pointer;
+}
+
+.jumbotron{
+  background-color: #000033;
+  color:#ffffff;
+  transition: all linear 0.5s;
+  margin-bottom:0;
+}
+
+.jumbotron ul{
+  font-family: 'Unica One', cursive;
+  text-transform:uppercase;
+  padding-left:0px;
+  margin-left:0%;
+  word-spacing: 3em;
+  font-size:1.3em;
+}
+
+.links{
+  display:inline;
+  text-align:center;
+  font-family: 'Unica One',cursive;
+  color: red;
+  opacity:0.5;
+  transition: opacity 0.2s;
+  padding-left:0px;
+}
+
+.links a{
+  text-decoration:none;
+}
+
+.list_exp, #experience,#projects_more{
+  text-align:left;
+}
+
+.list_exp ul{
+  margin-top:2vh;
+  margin-bottom:2vh;
+  list-style:none;
+}
+
+.main_text{
+  width:65vw;
+  margin:0 auto;
+}
+
+#name_input{
+  margin-top:10vh;
+  width:60vw;
+  font-size:2vw;
+  text-align:center;
+}
+.project audio{
+  margin-top:10vh;
+}
+.project img{
+  margin-top:4vh;
+  width:15vw;
+}
+
+.school{
+  margin-bottom:8vh;
+  margin-top:8vh;
+  text-align: center;
+}
+
+.small{
+  vertical-align: middle;
+}
+
+.top_margin{
+  margin-top:4vh;
+}
+
+.work-photo{
+  margin-bottom:4vh;
+}
