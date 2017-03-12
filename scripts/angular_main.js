@@ -15,6 +15,15 @@ andrei_page.controller('controller',function($scope){
         return viewButtons;
     }
 
+    $scope.name_is_defined = function(){
+        var user_data = localStorage.getItem('user');
+        if(user_data!=null && user_data.length>0){
+            return true;
+        }
+
+        return false;
+    }
+
     $scope.main_content = function(){
         if(!viewButtons){
             setName();
