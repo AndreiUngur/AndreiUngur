@@ -137,6 +137,7 @@ h1{
 .main_text{
   width:65vw;
   margin:0 auto;
+  margin-bottom:10vh;
 }
 
 #name_input{
