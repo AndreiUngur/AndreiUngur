@@ -4,11 +4,15 @@ andrei_page.controller('controller',function($scope){
     var viewButtons = true;
 
     $scope.setNameEng = function(){
-        viewButtons=false;
+        if($scope.name_is_defined()){
+            viewButtons=false;
+        }
     }
 
     $scope.setNameFr = function(){
-        viewButtons=false;
+        if($scope.name_is_defined()){
+            viewButtons=false;
+        }
     }
 
     $scope.name_input = function(){
