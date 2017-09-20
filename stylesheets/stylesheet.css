@@ -145,6 +145,11 @@ h1{
   text-align:center;
 }
 
+#recentjob{
+  max-height:20vh;
+  width:auto;
+}
+
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none !important;
 }
