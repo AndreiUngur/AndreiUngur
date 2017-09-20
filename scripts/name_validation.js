@@ -43,9 +43,9 @@ function setName(){
     }
 
     if(language == "EN"){
-      output_text+="This page was created by Andrei Ungur, a second year Software Engineering student of McGill University, using Github/HTML5/JQuery/Javascript/CSS/Boostrap/Angularjs. Click on any of the tabs above for more information.";    
+      output_text+="This page was created by Andrei Ungur, a Software Engineering student of McGill University, using Github/HTML5/JQuery/Javascript/CSS/Boostrap/Angularjs. Click on any of the tabs above for more information.";    
     } else {
-      output_text+="Cette page a été crée par Andrei Ungur, un étudiant de deuxième année en Génie Logiciel à l'Université McGill, en utilisant Github/HTML5/JQuery/Javascript/CSS/Boostrap/Angularjs. Cliquez sur n'importe quel onglet pour plus d'information.";
+      output_text+="Cette page a été crée par Andrei Ungur, un étudiant en Génie Logiciel à l'Université McGill, en utilisant Github/HTML5/JQuery/Javascript/CSS/Boostrap/Angularjs. Cliquez sur n'importe quel onglet pour plus d'information.";
     }
     
     text_field.text(output_text);
