@@ -34,7 +34,7 @@ function setName(){
           output = "Salut "+user_name+"! ";
         }
       }
-    } else if(user_history.length>0){
+    } else if(user_history!=null && user_history.length>0){
       if(language == "EN"){
         output_text = "Hi "+user_history+" ! ";
       } else {
