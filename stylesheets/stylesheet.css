@@ -4,6 +4,7 @@
 
 .about_text{
   text-align:justify;
+  padding-bottom: 15vh;
 }
 
 .big{
@@ -46,6 +47,10 @@ button:hover{
   border-color:rgba(0,0,0,0.5);
   background-color:rgba(0,0,51,0.2);
   overflow:auto;
+}
+
+.about_photos{
+  width:30vw;
 }
 
 .education_photos{
