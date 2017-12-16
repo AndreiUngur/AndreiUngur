@@ -2,6 +2,7 @@ var ENG;
 var FR;
 var lang_data = {"EN":"","FR":""};
 var language;
+const projects_max = 7;
 
 //Set-up on document start
 $(document).ready(function() {
@@ -102,7 +103,7 @@ function writeData(lang){
 	$('#projects_intro').text(lang_data[lang].projects_contact);
 	$('#projects_more').text(lang_data[lang].projects_about);
 	
-	for(var i=0;i<3;i++){
+	for(var i=0;i<projects_max;i++){
 		$('#proj-'+(i+1)+'-title').text(lang_data[lang]["projects_"+i][0]);
 		$('#proj-'+(i+1)+'-description').text(lang_data[lang]["projects_"+i][1]);
 	}

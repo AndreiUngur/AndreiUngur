@@ -73,6 +73,14 @@ h1{
   cursor:default;
 }
 
+.hoverzoom{
+  transition: all .2s ease-in-out; 
+}
+
+.hoverzoom:hover{
+  transform: scale(1.5); 
+}
+
 #am,#ed,#ex,#pj{
   font-family: 'Unica one',cursive;
   font-size:2vw;
@@ -168,9 +176,15 @@ h1{
 .project audio{
   margin-top:10vh;
 }
+.small{
+  width:30vw;
+}
+
+.big{
+  width:18vw
+}
 .project img{
   margin-top:4vh;
-  width:15vw;
 }
 
 #seq_output{
