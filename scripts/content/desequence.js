@@ -11,7 +11,7 @@ function desequence()
     outputbox3.innerHTML = "Shift of two:<br><br>";
 
     //Sequence DNA in groups of three
-    var text = document.getElementById("dnaseq").value;
+    var text = document.getElementById("dna_input").value;
       					
     var counter;
     var shift0=0;
