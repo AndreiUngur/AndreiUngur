@@ -27,7 +27,7 @@ andrei_page.controller('controller',function($scope){
     $scope.main_content = function(){
         if(!viewButtons){
             setName();
-            $scope.myStyle = {'padding-top':'2vh','padding-bottom':'2vh'};
+            $scope.myStyle = {'padding-top':'4vh','padding-bottom':'4vh'};
         }
         return !viewButtons;
     }
