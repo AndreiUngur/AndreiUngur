@@ -34,13 +34,22 @@
       </div>
 
       <div class='text-center' data-ng-show="name_input()">
+        <div class="col-xs-8 col-xs-offset-2">
+        <div class="row">
         <input type="text" id="name_input" data-ng-model="name" data-ng-show="!name_is_defined()" data-ng-cloak placeholder="What is your name? Quel est votre nom?"/><br><br>
-        <button id="ENG-Select" data-ng-click="setNameEng()"> Continue in English! </button>
-        <button id="FR-Select" data-ng-click="setNameFr()"> Continuez en Français! </button>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+        <button id="ENG-Select" class="btn" data-ng-click="setNameEng()"> <span class="button-text-full">Continue in English! </span><span class="button-text-short">English</span></button>
+      </div>
+      <div class="col-xs-6">
+        <button id="FR-Select" class="btn" data-ng-click="setNameFr()"> <span class="button-text-full">Continuez en Français!</span><span class="button-text-short">Français</span> </button>
+      </div>
+      </div>
+    </div>
       </div>
 
       <div id="main-content" class="text-center" data-ng-cloak data-ng-show="main_content()">
-
       <div id="headers">
           <h2 id="am" class="active"></h2>
           <h2 id="ed" class="active"></h2>
@@ -49,38 +58,36 @@
         </div>
         
         <div id="about" class="main_text top_margin">
-          <div class="col-xs-8 about_text">
+            <img class="about_photos" src="images/headshot.jpg" alt="dre">
+          <div class="about_text">
             <p id="a_p1"></p>
             <p id="a_p2"></p>
             <p id="a_p3"></p>
-          </div>
-          <div class="col-xs-2">
-            <img class="about_photos" src="images/headshot.jpg" alt="dre">
           </div>
         </div>
 
         <div id="education" class="main_text">
           <div class="row school">
             <div class="col-xs-6">
-              <p class="big" id="mcgill_edu"></p>
-              <p class="small" id="mcgill_desc_1"></p>
-              <p class="small" id="mcgill_desc_2"></p>
-              <p class="small" id="mcgill_desc_3"></p>
+              <p class="big_edu" id="mcgill_edu"></p>
+              <p id="mcgill_desc_1"></p>
+              <p id="mcgill_desc_2"></p>
+              <p id="mcgill_desc_3"></p>
             </div>
             <div class="col-xs-6">  
-              <img class="education_photos vcenter" src="http://tinyurl.com/websitemcgilllogo" alt="mcgill">
+              <img class="education_photos" src="http://tinyurl.com/websitemcgilllogo" alt="mcgill">
             </div>
           </div>
 
           <div class="row school">
             <div class="col-xs-6">
-              <p class="big" id="breb_edu"></p>
-              <p class="small" id="breb_desc_1"></p>
-              <p class="small" id="breb_desc_2"></p>
-              <p class="small" id="breb_desc_3"></p>
+              <p class="big_edu" id="breb_edu"></p>
+              <p id="breb_desc_1"></p>
+              <p id="breb_desc_2"></p>
+              <p id="breb_desc_3"></p>
             </div>
             <div class="col-xs-6">
-              <img class="education_photos vcenter" src="images/brebs.jpg" alt="brebs">
+              <img class="education_photos" src="images/brebs.jpg" alt="brebs">
             </div>
           </div>
 
@@ -90,7 +97,7 @@
           <!-- Work Experience -->
           <p class="big_exp2" id="work"></p>
           <div class="row">
-            <div class="col-xs-10">
+              <img id="recentjob" class="center-block work-photo vcenter" src="images/recentjob.png" alt="Ubisoft Logo">
               <p id="work-1"></p>
               <div class="list_exp">
                 <ul>
@@ -101,10 +108,6 @@
                   <li id="work-1-3"></li>
                 </ul>
               </div>
-            </div>
-            <div class="col-xs-2">
-              <img id="recentjob" class="center-block work-photo vcenter" src="images/recentjob.png" alt="Ubisoft Logo">
-            </div>
           </div>
 
           <p id="work-2"></p>
@@ -145,7 +148,7 @@
 
           <!-- Volunteering -->
           <p class="big_exp3" id="volunteering"></p>
-          <img class="center-block work-photo" src="http://www.sja.ca/English/_layouts/images/masterPage_SJA/img/logo.png" alt="sja">
+          <img id="sja" class="center-block work-photo" src="http://www.sja.ca/English/_layouts/images/masterPage_SJA/img/logo.png" alt="sja">
           <p id="vol"></p>
           <div class="list_exp">
             <ul>
@@ -161,7 +164,7 @@
 
           <!-- Media recommender -->
           <div class="row">
-            <div class="project col-xs-6">
+            <div class="project col-xs-6 ">
                 <a href="http://andreiungur.github.io/mediarecommender">
                   <img class="hoverzoom small" src="images/mediarecommend.JPG" alt="Media Recommender">
                 </a>
