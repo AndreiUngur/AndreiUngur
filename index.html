@@ -33,21 +33,18 @@
         </ul>
       </div>
 
-      <div class='text-center' data-ng-show="name_input()">
-        <div class="col-xs-8 col-xs-offset-2">
-        <div class="row">
-        <input type="text" id="name_input" data-ng-model="name" data-ng-show="!name_is_defined()" data-ng-cloak placeholder="What is your name? Quel est votre nom?"/><br><br>
-      </div>
-      <div class="row">
-        <div class="col-xs-6">
-        <button id="ENG-Select" class="btn" data-ng-click="setNameEng()"> <span class="button-text-full">Continue in English! </span><span class="button-text-short">English</span></button>
-      </div>
-      <div class="col-xs-6">
-        <button id="FR-Select" class="btn" data-ng-click="setNameFr()"> <span class="button-text-full">Continuez en Français!</span><span class="button-text-short">Français</span> </button>
-      </div>
-      </div>
-    </div>
-      </div>
+      <div class='text-center welcome_screen' data-ng-show="welcome_visible()">
+          <div class="col-xs-8 col-xs-offset-2">
+            <div class="row">
+              <div class="col-xs-6">
+                <button id="ENG-Select" class="btn" data-ng-click="setNameEng()"> <span class="button-text-full">Continue in English! </span><span class="button-text-short">English</span></button>
+              </div>
+              <div class="col-xs-6">
+                <button id="FR-Select" class="btn" data-ng-click="setNameFr()"> <span class="button-text-full">Continuez en Français!</span><span class="button-text-short">Français</span> </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
       <div id="main-content" class="text-center" data-ng-cloak data-ng-show="main_content()">
       <div id="headers">
@@ -278,7 +275,7 @@
         </div>
 
         <div id="etc" class="main_text top_margin">
-          <p id="custom_text"></p>
+          <p id="intro_text"></p>
         </div>
       </div>
     </div>

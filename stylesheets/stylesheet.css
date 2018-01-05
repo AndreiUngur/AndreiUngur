@@ -41,13 +41,15 @@
 }
 
 body{
+  font-family: 'Vollkorn';
   font-size:16px;
   line-height: 2em;
   height: 100%;
 }
 
 button{
-  background-color: #B5A6A6;
+  background-color: white;
+  box-shadow: 2px 2px;
   color:#000056;
   width: 100%;
   overflow: hidden;
@@ -55,9 +57,9 @@ button{
 }
 
 button:hover{
-  background-color:#000056;
-  color:#CECECE !important;
-  transition-duration: 0.5s;
+  color:#08175b !important;
+  box-shadow: none;
+  transition-duration: 0.3s;
 }
 
 .button-text-short{
@@ -71,12 +73,6 @@ button:hover{
   }
   .button-text-short{
     display:inline-block;
-  }
-}
-
-@media (max-width: 650px){
-  #name_input{
-    font-size: 0.8em !important;
   }
 }
 
@@ -144,7 +140,7 @@ html{
 }
 
 #am:hover,#ed:hover,#ex:hover,#pj:hover{
-  background: rgba(170,170,255,0.5);
+  background: rgba(219,219,219) !important;
   cursor:pointer;
   /*This text can't be selected */
   -webkit-user-select: none; /* Chrome/Safari */        
@@ -211,11 +207,10 @@ html{
   word-break: break-word;
 }
 
-#name_input{
-  margin-top:10vh;
-  width:100%;
-  font-size:1em;
-  text-align:center;
+@media (max-width: 650px){
+  #name_input{
+    font-size: 0.8em !important;
+  }
 }
 
 #recentjob{
@@ -223,10 +218,6 @@ html{
   float: right;
   margin-left: 5vw;
   margin-bottom: 5vh;
-}
-
-[ng\:cloak], [ng-cloak], .ng-cloak {
-  display: none !important;
 }
 
 .project audio{
@@ -283,6 +274,10 @@ html{
 
 .top_margin{
   margin-top:4vh;
+}
+
+.welcome_screen{
+  margin-top: 10vh;
 }
 
 #work-1{
