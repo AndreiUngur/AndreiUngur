@@ -49,6 +49,7 @@ body{
 
 button{
   background-color: white;
+  border:none;
   box-shadow: 2px 2px;
   color:#000056;
   width: 100%;
@@ -90,7 +91,7 @@ button:hover{
 }
 
 .education_photos{
-  max-width: 50%;
+  max-width: 40%;
 }
 
 @media (max-width: 500px){
@@ -140,7 +141,7 @@ html{
 }
 
 #am:hover,#ed:hover,#ex:hover,#pj:hover{
-  background: rgba(219,219,219) !important;
+  background: #9B9B9B !important;
   cursor:pointer;
   /*This text can't be selected */
   -webkit-user-select: none; /* Chrome/Safari */        
