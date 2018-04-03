@@ -102,7 +102,7 @@ button:hover{
 
 h1{
   margin-top: 0;
-  font-family: 'Unica One', cursive;
+  font-family: 'Unica One', sans-serif, 'Arial Narrow';
   font-weight: 500;
   line-height: 1.2;
   color: #ffffff;
@@ -124,7 +124,7 @@ html{
 }
 
 #am,#ed,#ex,#pj{
-  font-family: 'Unica one',cursive;
+  font-family: 'Unica one', sans-serif, 'Arial Narrow';
   font-size:1.5em;
   color: #000066;
   letter-spacing: 1px;
@@ -165,7 +165,7 @@ html{
 }
 
 .jumbotron ul{
-  font-family: 'Unica One', cursive;
+  font-family: 'Unica One', 'Arial Narrow', 'Helvetica', sans-serif,;
   text-transform:uppercase;
   padding-left:0px;
   margin-left:0%;
@@ -176,7 +176,7 @@ html{
 .links{
   display:inline;
   text-align:center;
-  font-family: 'Unica One',cursive;
+  font-family: 'Unica One', sans-serif, 'Arial Narrow';
   transition: opacity 0.2s;
   padding-left:0px;
 }
