@@ -157,7 +157,7 @@ html{
 .jumbotron{
   background-image: url('../images/skyline.JPG');
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-color: black/*#000033*/;
   color:#ffffff;
   transition: all linear 0.5s;
