@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html data-ng-app="andrei_page">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
+  <link rel="shortcut icon" href="http://www.iconj.com/ico/d/z/dzwucinopk.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.js"></script>
+    
+    <title>Andrei Ungur</title>
+  </head>
+
+  <body>
+    <style type="text/css">
+        .network { 
+          display:block;
+          width:800px;
+          height:800px;
+          border:solid;
+          background-color:white;
+        }
+
+    </style>         
+    <div class="network">Network Graph</div>
+    <script type="text/javascript">
+    console.log("asdadsasd");
+    var nodes = [
+        {
+            id:"interest1",
+            label:"Interest 1"
+        },
+        {
+            id:"interest2",
+            label:"Interest 2"
+        },
+        {
+            id:"interest3",
+            label:"Interest 3"
+        },
+        {
+            id:"experience1",
+            label:"Experience 1"
+        },
+        {
+            id:"experience2",
+            label:"Experience 2"
+        },
+        {
+            id:"experience3",
+            label:"Experience 3"
+        }
+    ];
+    var edges = [
+        {
+            from: "experience1",
+            to: "experience2",
+            arrows: "to"
+        },
+        {
+            from: "experience2",
+            to: "experience3",
+            arrows: "to"
+        },
+        {
+            from: "interest2",
+            to: "experience3",
+            arrows: "to",
+            dashes: true
+        },
+        {
+            from:"interest1",
+            to:"experience1",
+            arrows: "to",
+            dashes: true
+        },
+        {
+            from: "interest1",
+            to: "experience2",
+            arrows: "to",
+            dashes: true
+        },
+        {
+            from: "interest2",
+            to: "experience1",
+            arrows: "to",
+            dashes: true
+        },
+        {
+            from: "interest2",
+            to: "experience2",
+            arrows: "to",
+            dashes: true
+        },
+        {
+            from: "interest3",
+            to: "experience3",
+            arrows: "to",
+            dashes: true
+        }
+    ];
+    var options = {
+        edges: {
+            smooth: {
+                type: 'cubicBezier',
+                forceDirection: 'horizontal',
+                    roundness: 0.4
+                }
+            },
+            layout: {
+                hierarchical: {
+                    direction: true,
+                    nodeSpacing: 200,
+                    sortMethod: "directed"
+                }
+            },
+            nodes: {
+                shape: "box",
+                borderWidth: 0
+            }
+        };
+    var container = document.querySelector('.network');
+    var data = {
+        nodes: nodes,
+        edges: edges
+    };
+    network = new vis.Network(container, data, options);
+    console.log(network);
+    </script>
+  </body>
+  </html>

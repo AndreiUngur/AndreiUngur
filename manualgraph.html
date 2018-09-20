@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html data-ng-app="andrei_page">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
+  <link rel="shortcut icon" href="http://www.iconj.com/ico/d/z/dzwucinopk.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Andrei Ungur</title>
+  </head>
+
+  <body>
+
+
+    <div class="graph">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="500" height="500" viewBox="0 0 500 500" class="shadow">
+        <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth" viewBox="0 0 20 20">
+                <path d="M0,0 L0,6 L9,3 z" fill="#f00" />
+            </marker>
+        </defs>
+        <line x1="220" y1="70" x2="220" y2="148" stroke="#000" stroke-width="5" marker-end="url(#arrow)" />
+        <line x1="220" y1="240" x2="220" y2="318" stroke="#000" stroke-width="5" marker-end="url(#arrow)" />
+
+            <line x1="0" y1="140" x2="220" y2="70" stroke-width="1" class="line"/>
+            <line x1="0" y1="140" x2="220" y2="240" stroke-width="1" class="line"/>
+            <line x1="0" y1="140" x2="220" y2="410" stroke-width="1" class="line"/>
+            <line x1="0" y1="320" x2="220" y2="410" stroke-width="1" class="line"/>
+            <line x1="440" y1="320" x2="220" y2="70" stroke-width="1" class="line"/>
+            <line x1="440" y1="320" x2="220" y2="410" stroke-width="1" class="line"/>
+                
+            <ellipse onclick="test(0)" cx="220" cy="70" rx="120" ry="70" class="ellipse"/>
+            <text x="220" y="70" text-anchor="middle" dy=".3em">Nuance</text>
+            <foreignObject id="textbox1" x="340" y="10" width="500" height="200">
+                    <p xmlns="http://www.w3.org/1999/xhtml" 
+                       style="font-size:12px;">The paragraph here</p>
+                       <p xmlns="http://www.w3.org/1999/xhtml" 
+                       style="font-size:12px;">Also this paragraph</p>
+                       <p xmlns="http://www.w3.org/1999/xhtml" 
+                       style="font-size:12px;">Let's not forget this one</p>
+            </foreignObject>
+
+            <circle cx="0" cy="140" r="50" class="circle"/>
+            <text x="0" y="140" text-anchor="middle" dy=".3em">Web Development</text>
+
+            <ellipse onclick="test(1)" cx="220" cy="240" rx="120" ry="70" class="ellipse"/>
+            <text x="220" y="240" text-anchor="middle" dy=".3em">Ubisoft</text>
+            <foreignObject id="textbox2" x="340" y="180" width="500" height="200">
+                    <p xmlns="http://www.w3.org/1999/xhtml" 
+                       style="font-size:12px;">More dummy text</p>
+                       <p xmlns="http://www.w3.org/1999/xhtml" 
+                       style="font-size:12px;">Also this paragraph</p>
+                       <p xmlns="http://www.w3.org/1999/xhtml" 
+                       style="font-size:12px;">Let's not forget this one</p>
+            </foreignObject>
+
+            <circle cx="440" cy="320" r="50" class="circle"/>
+            <text x="440" y="320" text-anchor="middle" dy=".3em">Natural Language Processing</text>
+
+            <ellipse onclick="test(2)" cx="220" cy="410" rx="120" ry="70" class="ellipse"/>
+            <text x="220" y="410" text-anchor="middle" dy=".3em">Element AI</text>
+            <foreignObject id="textbox3" x="340" y="350" width="500" height="200">
+                    <p xmlns="http://www.w3.org/1999/xhtml" 
+                       style="font-size:12px;">Final dummy text</p>
+                       <p xmlns="http://www.w3.org/1999/xhtml" 
+                       style="font-size:12px;">Also this paragraph</p>
+                       <p xmlns="http://www.w3.org/1999/xhtml" 
+                       style="font-size:12px;">Let's not forget this one</p>
+            </foreignObject>
+
+            <circle cx="0" cy="320" r="50" class="circle"/>
+            <text x="0" y="320" text-anchor="middle" dy=".3em">Machine Learning</text>
+          </svg>
+          
+    </div>
+
+    <script type="text/javascript">
+
+        var textboxes = [$("#textbox1"), $("#textbox2"), $("#textbox3")];
+        function test(i)
+        {
+            setTimeout(function(){
+                if(textboxes[i].css('display') != 'none')
+                {
+                    textboxes[i].fadeOut();
+                    hideTextBoxes();
+                }
+                else
+                {
+                    hideTextBoxes();
+                    textboxes[i].fadeIn();
+                }
+            },500);
+        }
+
+        function hideTextBoxes()
+        {
+            console.log("asd");
+            textboxes.forEach(function(box)
+            {
+                box.hide();
+            });
+        }
+        hideTextBoxes();
+    </script>
+          
+          <style>
+          svg {
+  display: block;
+  margin: auto;
+  width: 100vmin;
+}
+.shadow {
+  -webkit-filter: drop-shadow( 2px 2px 2px rgba(0,0,0,0.5) );
+          filter: drop-shadow( 2px 2px 2px rgba(0,0,0,0.5) );
+}
+.line {
+  stroke: gray;
+}
+.ellipse {
+  fill: lightblue;
+}
+.circle {
+  fill: lightgreen;
+}
+
+.textbox{
+    border:solid;
+}
+.graph{
+    height:100%;
+    width:100%;
+}
+          </style>
+    </body>
+</html>
+
+  </body>
+  </html>
