@@ -3,6 +3,7 @@ var FR;
 var lang_data = {"EN":"","FR":""};
 var language;
 const projects_max = 7;
+const involvement_max = 5;
 
 //Set-up on document start
 $(document).ready(function() {
@@ -74,32 +75,13 @@ function writeData(lang){
 
 	//Experience
 	$('#ex').text(lang_data[lang].experience);
-	//Activities
-	$('#activities').text(lang_data[lang].activities);
-	$('#act-intro').text(lang_data[lang].activities_1);
-	$('#act-1').text(lang_data[lang].activities_list[0]);
-	$('#act-2').text(lang_data[lang].activities_list[1]);
-	$('#act-3').text(lang_data[lang].activities_list[2]);
-	$('#act-code').text(lang_data[lang].activities_code);
-	
-	//Work
-	var worklabel = "work";
-	$('#'+worklabel).text(lang_data[lang][worklabel]);
-	for(var i=0;i<3;i++){
-		$('#'+(worklabel+"-"+(i+1))).text(lang_data[lang][(worklabel+'_'+i)]);
-		for(var j=0;j<lang_data[lang][(worklabel+"_"+i)].length;j++){
-			$('#'+worklabel+"-"+(i+1)+"-"+(j+1)).text(lang_data[lang][(worklabel+"_"+i+"_list")][j]);
-		}
-	}
 
 	//Involvement
 	$('#inv').text(lang_data[lang].involvement);
-	
-	//Volunteering
-	$('#volunteering').text(lang_data[lang].volunteering);
-	$('#vol').text(lang_data[lang].volunteering_1);
-	$('#vol-1').text(lang_data[lang].volunteering_list[0]);
-	$('#vol-2').text(lang_data[lang].volunteering_list[1]);
+	for(var i=0;i<involvement_max;i++){
+		$('#inv-'+(i+1)+'-title').text(lang_data[lang]["involvement_"+i][0]);
+		$('#inv-'+(i+1)+'-description').text(lang_data[lang]["involvement_"+i][1]);
+	}
 	
 	//Projects
 	$('#pj').text(lang_data[lang].projects);
