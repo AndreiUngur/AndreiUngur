@@ -1,4 +1,4 @@
-#about,#education,#experience, #other{
+#about,#education,#experience, #involvement, #other{
   display:none;
 }
 
@@ -77,6 +77,18 @@ button:hover{
   }
 }
 
+.clickable:hover{
+  cursor: pointer;
+}
+
+.circle {
+  fill: #000056;
+}
+
+.circleText{
+    color: white;
+}
+
 .description{
   border-left:solid;
   border-color:rgba(0,0,0,0.5);
@@ -100,6 +112,17 @@ button:hover{
   }
 }
 
+.ellipse {
+  fill: lightblue;
+}
+
+.graph{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
 h1{
   margin-top: 0;
   font-family: 'Unica One', sans-serif, 'Arial Narrow';
@@ -115,15 +138,11 @@ h1{
   transition: all .2s ease-in-out; 
 }
 
-.hoverzoom:hover{
-  transform: scale(1.5); 
-}
-
 html{
   height: 100%;
 }
 
-#am,#ed,#ex,#pj{
+#am,#ed,#ex,#inv, #pj{
   font-family: 'Unica one', sans-serif, 'Arial Narrow';
   font-size:1.5em;
   color: #000066;
@@ -140,7 +159,7 @@ html{
   text-transform:uppercase;
 }
 
-#am:hover,#ed:hover,#ex:hover,#pj:hover{
+#am:hover,#ed:hover,#ex:hover, #inv:hover, #pj:hover{
   background: #9B9B9B !important;
   cursor:pointer;
   /*This text can't be selected */
@@ -171,6 +190,10 @@ html{
   margin-left:0%;
   word-spacing: 3em;
   font-size:1em;
+}
+
+.line {
+  stroke: gray;
 }
 
 .links{
@@ -271,6 +294,23 @@ html{
   text-align: center;
   display: flex;
   align-items: center;
+}
+
+.shadow {
+  -webkit-filter: drop-shadow( 2px 2px 2px rgba(0,0,0,0.5) );
+          filter: drop-shadow( 2px 2px 2px rgba(0,0,0,0.5) );
+}
+
+svg {
+  display: block;
+  margin: none;
+  width: 100%;
+  height: auto;
+}
+@media (max-width:600px){
+  svg{
+    width: 150vw;
+  }
 }
 
 .top_margin{

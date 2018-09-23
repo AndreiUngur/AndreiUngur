@@ -51,6 +51,7 @@
           <h2 id="am" class="active"></h2>
           <h2 id="ed" class="active"></h2>
           <h2 id="ex" class="active"></h2>
+          <h2 id="inv" class="active"></h2>
           <h2 id="pj" class="active"></h2>
         </div>
         
@@ -92,70 +93,153 @@
 
         <div id="experience" class="main_text top_margin">
           <!-- Work Experience -->
-          <p class="big_exp2" id="work"></p>
+          <!-- Begin Graph -->
+          <div class="graph">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1000" height="1000" viewBox="0 0 500 1000" class="shadow">
+            <defs>
+                <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth" viewBox="0 0 20 20">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#00000" />
+                </marker>
+            </defs>
+            <defs>
+                <marker id="smallerArrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth" viewBox="0 0 20 20">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#00000" />
+                </marker>
+            </defs>
+            <line x1="250" y1="100" x2="250" y2="215" stroke="#000" stroke-width="5" marker-end="url(#arrow)" />
+            <line x1="250" y1="410" x2="250" y2="526" stroke="#000" stroke-width="5" marker-end="url(#arrow)" />
+            <line x1="150" y1="100" x2="60" y2="170" stroke-width="2" class="line"/>
+            <line x1="150" y1="280" x2="70" y2="230" stroke-width="2" class="line"/>
+            <line x1="150" y1="550" x2="20" y2="280" stroke-width="2" class="line"/>
+            <line x1="100" y1="550" x2="50" y2="520" stroke-width="2" class="line"/>
+            <line x1="350" y1="100" x2="450" y2="300" stroke-width="2" class="line"/>
+            <line x1="350" y1="550" x2="450" y2="400" stroke-width="2" class="line"/>
+            <defs>
+              <pattern id="nuance" patternUnits="userSpaceOnUse" height="70" width="400">
+                <image x="40" y="0" height="70" width="400" xlink:href="images/logos/nuance.svg"></image>
+              </pattern>
+            </defs>
+            <rect class="clickable" onclick="test(0)" x="70" y="0" height="70" width="350" fill="url(#nuance)"/>
+            
+            <g id="textbox1">
+              <rect class="clickable" onclick="test(0)" x="70" y="0" height="100" width="360" fill="white"/>
+              <text x="90" y="20" text-anchor="start" dy=".3em">January 2017 - May 2017</text>
+              <text x="90" y="40" text-anchor="start" dy=".3em">123123</text>
+            </g>
+            
+            <circle cx="0" cy="210" r="60" class="circle"/>
+            <text fill="white" x="0" y="200" text-anchor="middle" dy=".3em">Web</text>
+            <text fill="white" x="0" y="220" text-anchor="middle" dy=".3em">Development</text>
+            
+            <defs>
+              <pattern id="ubisoft" patternUnits="userSpaceOnUse" height="400" width="400">
+                <image x="180" y="250" height="150" width="150" xlink:href="images/logos/ubisoft.svg"></image>
+              </pattern>
+            </defs>
+            
+            <rect class="clickable" onclick="test(1)" x="170" y="240" width="170" height="170" fill="url(#ubisoft)"/>
+            <g id="textbox2">
+                <circle class="clickable" onclick="test(1)" cx="252" cy="335" r="95" fill="white"/>
+                <text x="170" y="320" text-anchor="start" dy=".3em">April 2017 - August 2017</text>
+                <text x="170" y="340" text-anchor="start" dy=".3em">123123</text>
+                <text x="170" y="360" text-anchor="start" dy=".3em">456456</text>
+            </g>
+
+            <circle cx="500" cy="350" r="55" class="circle"/>
+            <text fill="white" x="500" y="330" text-anchor="middle" dy=".3em">Natural</text>
+            <text fill="white" x="500" y="350" text-anchor="middle" dy=".3em">Language</text>
+            <text fill="white" x="500" y="370" text-anchor="middle" dy=".3em">Processing</text>
+
+            <defs>
+              <pattern id="elementai" patternUnits="userSpaceOnUse" height="500" width="500">
+                <image x="80" y="-120" height="400" width="400" xlink:href="images/logos/elementai.svg"></image>
+              </pattern>
+            </defs>
+            <rect class="clickable" onclick="test(2)" x="60" y="540" height="80" width="430" fill="url(#elementai)"/>
+            <g id="textbox3">
+              <rect class="clickable" onclick="test(2)" x="30" y="550" height="80" width="450" fill="white"/>
+              <text x="30" y="570" text-anchor="start" dy=".3em">May 2018 - December 2018</text>
+              <text x="30" y="590" text-anchor="start" dy=".3em">123123</text>
+              <text x="30" y="610" text-anchor="start" dy=".3em">456456</text>
+            </g>
+            <circle cx="0" cy="490" r="50" class="circle"/>
+            <text fill="white" x="0" y="480" text-anchor="middle" dy=".3em">Machine</text>
+            <text fill="white" x="0" y="500" text-anchor="middle" dy=".3em">Learning</text>
+          </svg>
+        </div>
+          <!-- End Graph -->
+        </div>
+        <div id="involvement" class="main_text top_margin">
           <div class="row">
-              <img id="recentjob" class="center-block work-photo vcenter" src="images/recentjob.png" alt="Ubisoft Logo">
-              <p id="work-1"></p>
-              <div class="list_exp">
-                <ul>
-                  <li id="work-1-1"></li>
-                  <br>
-                  <li id="work-1-2"></li>
-                  <br>
-                  <li id="work-1-3"></li>
-                </ul>
-              </div>
+            <div class="project col-xs-6 ">
+              <a href="http://andreiungur.github.io/mediarecommender">
+                <img class="hoverzoom small" src="" alt="IT Committee">
+              </a>
+            </div>
+
+            <div class="col-xs-6 description">
+              <a href="http://andreiungur.github.io/mediarecommender" id="proj-1-title"></a>
+              <br>
+              <p id="proj-1-description"></p>
+            </div>
           </div>
-
-          <p id="work-2"></p>
-          <div class="list_exp">
-            <ul>
-              <li id="work-2-1"></li>
+          <br>
+          <div class="row">
+            <div class="project col-xs-6 ">
+              <a href="http://andreiungur.github.io/mediarecommender">
+                <img class="hoverzoom small" src="" alt="Game Dev McGill">
+              </a>
+            </div>
+  
+            <div class="col-xs-6 description">
+              <a href="http://andreiungur.github.io/mediarecommender" id="proj-1-title"></a>
               <br>
-              <li id="work-2-2"></li>
-              <br>
-              <li id="work-2-3"></li>
-            </ul>
+              <p id="proj-1-description"></p>
+            </div>
           </div>
-
-          <p id="work-3"></p>
-          <div class="list_exp">
-            <ul>
-              <li id="work-3-1"></li>
+          <br>
+          <div class="row">
+            <div class="project col-xs-6 ">
+              <a href="http://andreiungur.github.io/mediarecommender">
+                <img class="hoverzoom small" src="" alt="McGill Engineering Competition">
+              </a>
+            </div>
+  
+            <div class="col-xs-6 description">
+              <a href="http://andreiungur.github.io/mediarecommender" id="proj-1-title"></a>
               <br>
-              <li id="work-3-2"></li>
-              <br>
-              <li id="work-3-3"></li>
-            </ul>
-          </div>            
-
-          <!-- Activities -->
-          <p class="big_exp" id="activities"></p>
-          <p id="act-intro"></p>
-          <div class="list_exp">
-            <ul>
-              <li id="act-1"></li>
-              <br>
-              <li id="act-2"></li>
-              <br>
-              <li id="act-3"></li><a href="http://mcgamejam.com/">McGame Jam</a>
-            </ul>
+              <p id="proj-1-description"></p>
+            </div>
           </div>
-          <p id="act-code"></p>
-
-          <!-- Volunteering -->
-          <p class="big_exp3" id="volunteering"></p>
-          <img id="sja" class="center-block work-photo" src="http://www.sja.ca/English/_layouts/images/masterPage_SJA/img/logo.png" alt="sja">
-          <p id="vol"></p>
-          <div class="list_exp">
-            <ul>
-              <li id="vol-1"></li>
+          <br>
+          <div class="row">
+            <div class="project col-xs-6 ">
+              <a href="http://andreiungur.github.io/mediarecommender">
+                <img class="hoverzoom small" src="" alt="Robo-Electronics">
+              </a>
+            </div>
+    
+            <div class="col-xs-6 description">
+              <a href="http://andreiungur.github.io/mediarecommender" id="proj-1-title"></a>
               <br>
-              <li id="vol-2"></li>
-            </ul>
+              <p id="proj-1-description"></p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="project col-xs-6 ">
+              <a href="http://andreiungur.github.io/mediarecommender">
+                <img class="hoverzoom small" src="" alt="Saint-John's Ambulance">
+              </a>
+            </div>
+            
+            <div class="col-xs-6 description">
+              <a href="http://andreiungur.github.io/mediarecommender" id="proj-1-title"></a>
+              <br>
+              <p id="proj-1-description"></p>
+            </div>
           </div>
         </div>
-
         <div id="other" class="main_text top_margin">
           <p id="projects_more"></p>
 
@@ -168,7 +252,7 @@
             </div>
 
             <div class="col-xs-6 description">
-              <a id="proj-1-title"></a>
+              <a href="http://andreiungur.github.io/mediarecommender" id="proj-1-title"></a>
               <br>
               <p id="proj-1-description"></p>
             </div>
@@ -184,7 +268,7 @@
             </div>
 
             <div class="description col-xs-6">
-              <a id="proj-2-title"></a>
+              <a href="https://github.com/AndreiUngur/Codejam2017" id="proj-2-title"></a>
               <br>
               <p id="proj-2-description"></p>
             </div>
@@ -201,7 +285,7 @@
               </div>
 
               <div class="description col-xs-6">
-                <a id="proj-3-title"></a>
+                <a href="https://andreiungur.github.io/FootballPrediction/UI/" id="proj-3-title"></a>
                 <br>
                 <p id="proj-3-description"></p>
               </div>
@@ -217,7 +301,7 @@
               </div>
   
               <div class="description col-xs-6">
-                <a id="proj-4-title"></a>
+                <a href="http://www.chateaubeausoleil.ca" id="proj-4-title"></a>
                 <br>
                 <p id="proj-4-description"></p>
               </div>
@@ -233,7 +317,7 @@
               </div>
   
               <div class="description col-xs-6">
-                <a id="proj-5-title"></a>
+                <a href="http://www.andreiungur.github.io/dnaseq" id="proj-5-title"></a>
                 <br>
                 <p id="proj-5-description"></p>
               </div>
@@ -249,7 +333,7 @@
               </div>
   
               <div class="description col-xs-6">
-                <a id="proj-6-title"></a>
+                <a href="code/solver.java" id="proj-6-title"></a>
                 <br>
                 <p id="proj-6-description"></p>
               </div>
@@ -265,7 +349,7 @@
               </div>
   
               <div class="description col-xs-6">
-                <a id="proj-7-title"></a>
+                <a href="audio/sampleSpring.mp3" id="proj-7-title"></a>
                 <br>
                 <p id="proj-7-description"></p>
               </div>

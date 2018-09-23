@@ -91,6 +91,9 @@ function writeData(lang){
 			$('#'+worklabel+"-"+(i+1)+"-"+(j+1)).text(lang_data[lang][(worklabel+"_"+i+"_list")][j]);
 		}
 	}
+
+	//Involvement
+	$('#inv').text(lang_data[lang].involvement);
 	
 	//Volunteering
 	$('#volunteering').text(lang_data[lang].volunteering);
