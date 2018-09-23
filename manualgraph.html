@@ -17,7 +17,7 @@
 
 
     <div class="graph">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="500" height="1000" viewBox="0 0 500 1000" class="shadow">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="500" height="800" viewBox="0 0 500 800" class="shadow">
         <defs>
             <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth" viewBox="0 0 20 20">
                 <path d="M0,0 L0,6 L9,3 z" fill="#00000" />
@@ -43,10 +43,10 @@
                   <image x="40" y="0" height="70" width="400" xlink:href="images/logos/nuance.svg"></image>
                 </pattern>
             </defs>
-            <rect onclick="test(0)" x="70" y="0" height="70" width="350" fill="url(#nuance)"/>
+            <rect class="clickable" onclick="test(0)" x="70" y="0" height="70" width="350" fill="url(#nuance)"/>
             
             <g id="textbox1">
-                <rect onclick="test(0)" x="70" y="0" height="100" width="360" fill="white"/>
+                <rect class="clickable" onclick="test(0)" x="70" y="0" height="100" width="360" fill="white"/>
                 <text x="90" y="20" text-anchor="start" dy=".3em">January 2017 - May 2017</text>
                 <text x="90" y="40" text-anchor="start" dy=".3em">123123</text>
             </g>
@@ -60,10 +60,10 @@
                     <image x="180" y="250" height="150" width="150" xlink:href="images/logos/ubisoft.svg"></image>
                 </pattern>
             </defs>
-            <rect onclick="test(1)" x="170" y="240" width="170" height="170" fill="url(#ubisoft)"/>
+            <rect class="clickable" onclick="test(1)" x="170" y="240" width="170" height="170" fill="url(#ubisoft)"/>
             
             <g id="textbox2">
-                <circle onclick="test(1)" cx="252" cy="335" r="95" fill="white"/>
+                <circle class="clickable" onclick="test(1)" cx="252" cy="335" r="95" fill="white"/>
                 <text x="170" y="320" text-anchor="start" dy=".3em">April 2017 - August 2017</text>
                 <text x="170" y="340" text-anchor="start" dy=".3em">123123</text>
                 <text x="170" y="360" text-anchor="start" dy=".3em">456456</text>
@@ -79,9 +79,9 @@
                     <image x="80" y="-120" height="400" width="400" xlink:href="images/logos/elementai.svg"></image>
                 </pattern>
             </defs>
-            <rect onclick="test(2)" x="60" y="540" height="80" width="430" fill="url(#elementai)"/>
+            <rect class="clickable"  onclick="test(2)" x="60" y="540" height="80" width="430" fill="url(#elementai)"/>
             <g id="textbox3">
-                <rect onclick="test(2)" x="30" y="550" height="80" width="450" fill="white"/>
+                <rect class="clickable"  onclick="test(2)" x="30" y="550" height="80" width="450" fill="white"/>
                 <text x="30" y="570" text-anchor="start" dy=".3em">May 2018 - December 2018</text>
                 <text x="30" y="590" text-anchor="start" dy=".3em">123123</text>
                 <text x="30" y="610" text-anchor="start" dy=".3em">456456</text>
@@ -90,7 +90,6 @@
             <text fill="white" x="0" y="480" text-anchor="middle" dy=".3em">Machine</text>
             <text fill="white" x="0" y="500" text-anchor="middle" dy=".3em">Learning</text>
           </svg>
-          
     </div>
 
     <script type="text/javascript">

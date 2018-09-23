@@ -7,6 +7,9 @@ const education_text = $('#education');
 const experience_header = $('#ex');
 const experience_text = $('#experience');
 
+const involvement_header = $('#inv');
+const involvement_text = $('#involvement');
+
 const projects_header = $('#pj');
 const projects_text = $('#other');
 
@@ -34,6 +37,10 @@ function showContent(content, header){
     education_header.css('background','white');
     education_text.hide();
   }
+  if (content != involvement_text){
+    involvement_header.css('background','white');
+    involvement_text.hide();
+  }
   intro_text.hide();
   content.slideToggle();
   header.css('background','#bababa');
@@ -58,6 +65,12 @@ $(document).ready(function(){
       showIntroText(experience_header);
     }},500);
   });
+  involvement_header.click(function(){
+    showContent(involvement_text, involvement_header);
+    setTimeout(function(){if (involvement_text.css("display")!="block"){
+      showIntroText(involvement_header);
+    }},500);
+  });
   projects_header.click(function(){
     showContent(projects_text, projects_header);
     setTimeout(function(){if (projects_text.css("display")!="block"){
@@ -65,3 +78,30 @@ $(document).ready(function(){
     }},500);
   });
 });
+
+// Smooth sliding for the graph
+var textboxes = [$("#textbox1"), $("#textbox2"), $("#textbox3")];
+function test(i)
+{
+    setTimeout(function(){
+        if(textboxes[i].css('display') != 'none')
+        {
+            textboxes[i].fadeOut();
+            hideTextBoxes();
+        }
+        else
+        {
+            hideTextBoxes();
+            textboxes[i].fadeIn();
+        }
+    },500);
+}
+
+function hideTextBoxes()
+{
+    textboxes.forEach(function(box)
+    {
+        box.hide();
+    });
+}
+hideTextBoxes();
