@@ -4,6 +4,7 @@ var lang_data = {"EN":"","FR":""};
 var language;
 const projects_max = 7;
 const involvement_max = 5;
+const experience_max = 3;
 
 //Set-up on document start
 $(document).ready(function() {
@@ -75,6 +76,11 @@ function writeData(lang){
 
 	//Experience
 	$('#ex').text(lang_data[lang].experience);
+	$("#experience-description").text(lang_data[lang]["experience_desc"]);
+	for(var i=0;i<experience_max;i++){
+		$('#exp-title-'+(i)).text(lang_data[lang]["experience_title"][i]);
+		$('#exp-date-'+(i)).text(lang_data[lang]["experience_date"][i]);
+	}
 
 	//Involvement
 	$('#inv').text(lang_data[lang].involvement);
