@@ -2,7 +2,7 @@ var ENG;
 var FR;
 var lang_data = {"EN":"","FR":""};
 var language;
-const projects_max = 7;
+const projects_max = 8;
 const involvement_max = 5;
 const experience_max = 3;
 
