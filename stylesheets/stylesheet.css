@@ -49,6 +49,12 @@ button:hover{
   overflow:auto;
 }
 
+#dna_input{
+  width:50vw;
+  height:5vh;
+  margin:1vh;
+}
+
 .about_photos{
   width:30vw;
 }
@@ -165,6 +171,19 @@ h1{
 .project img{
   margin-top:4vh;
   width:15vw;
+}
+
+#seq_output{
+  margin: 0 auto;
+}
+
+#shift0, #shift1, #shift2{
+  width:15vw;
+  height:50vh;
+  overflow:scroll;
+  float:left;
+  margin-left:10vw;
+  margin-top:5vh;
 }
 
 .school{
