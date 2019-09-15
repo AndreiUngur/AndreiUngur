@@ -1,405 +1,302 @@
 <!DOCTYPE html>
-<html data-ng-app="andrei_page">
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
-  <link rel="shortcut icon" href="http://www.iconj.com/ico/d/z/dzwucinopk.ico" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Angular -->
-  <script src="scripts/angular/angular.min.js"></script>
-  
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
+<html style="height: 100%;">
+  <head>
     <title>Andrei Ungur</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
+
+    <!-- Animation when clicking on selectors (projects / involvement) -->
   </head>
 
   <body>
-    <div data-ng-controller='controller'>
-      <div class="jumbotron text-center" ng-style="myStyle">
-        <header>
-          <h1>Andrei Ungur</h1>
-        </header>
-        <ul>
-          <li class="links"><a href="https://www.linkedin.com/in/ungur"">LinkedIn</a></li>
-          <li class="links"><a href="mailto:andrei.ungur@mail.mcgill.ca">Contact</a></li>
-          <li class="links"><a href="https://soundcloud.com/doubleentandrei/tracks">SoundCloud</a></li>
-        </ul>
+    <!-- Front Page -->
+    <div id="front-page" class="container big-text">
+      <div class="line full-vertical centered"></div>
+      <div id="label-english" class="centered category circle-0">English</div>
+      <div class="centered language circle left-half circle-0"></div>
+      <div id="label-french" class="centered category circle-1">French</div>
+      <div class="centered language circle right-half circle-1"></div>
+      <div class="centered circle right-half circle-2"></div>
+      <div id="label-about" class="centered category circle-2"><a href="#About">About</a></div>
+      <div class="centered circle left-half circle-3"></div>
+      <div id="label-experience" class="centered category circle-3"><a href="#Experience">Experience</a></div>
+      <div class="centered circle right-half circle-4"></div>
+      <div id="label-projects" class="centered category circle-4"><a href="#Projects">Projects</a></div>
+      <div class="centered circle left-half circle-5"></div>
+      <div id="label-involvement" class="centered category circle-5"><a href="#Involvement">Involvement</a></div>
+      <h1 id='name' class="centered">
+        <span style="margin-right: 100px;">Andrei</span><br/><span style="margin-left: 100px;">Ungur</span>
+        <div class="line i-extension centered"></div>
+        <div class="line u-extension centered"></div>
+      </h1>
+    </div>
+
+    <!-- About Me -->
+    <div id="About" class="container">
+      <div class="in-text line full-vertical centered"></div>
+      <div class="big-text parallax wood align-left">
+        <img id="headshot" class='centered' src='pictures/headshot.png' style='border-radius: 50%;'/>
+        <h2 class="centered">About</h2>
       </div>
 
-      <div class='text-center welcome_screen' data-ng-show="welcome_visible()">
-          <div class="col-xs-8 col-xs-offset-2">
-            <div class="row">
-              <div class="col-xs-6">
-                <button id="ENG-Select" class="btn" data-ng-click="setNameEng()"> <span class="button-text-full">Continue in English! </span><span class="button-text-short">English</span></button>
-              </div>
-              <div class="col-xs-6">
-                <button id="FR-Select" class="btn" data-ng-click="setNameFr()"> <span class="button-text-full">Continuez en Français!</span><span class="button-text-short">Français</span> </button>
-              </div>
-            </div>
-          </div>
+      <!-- TODO: Maybe force this area to never overflow? -->
+      <div class="align-right padded" style="overflow: scroll;">
+        <p id="blurb-intro" class="blurb" align="left">Driven, curious Software Engineer with a passion for Web Development and Machine Learning.</p>
+        <p align="left"><span style='font-family: Staatlitches'>Constant learner</span>.</p>
+        <p align="left">Currently self-teaching myself Japanese & Mobile Development.</p>
+        <p align="left">Keeping up with advances in Natural Language Processing and new Javascript/Ruby frameworks.</p>
+        <p align="left"><span style='font-family: Staatlitches;'>Musician</span>.</p>
+        <p align="left">Self-taught guitar player and singer.</p>
+        <p align="left"><span style='font-family: Staatlitches'>Graduate</span>.</p>
+        <div id="school-0">
+          <p align="left">Software Engineering, McGill University</p><p align="left">(cGPA: 3.63/4.0)</p>
         </div>
-
-      <div id="main-content" class="text-center" data-ng-cloak data-ng-show="main_content()">
-      <div id="headers">
-          <h2 id="am" class="active"></h2>
-          <h2 id="ed" class="active"></h2>
-          <h2 id="ex" class="active"></h2>
-          <h2 id="inv" class="active"></h2>
-          <h2 id="pj" class="active"></h2>
-        </div>
-        
-        <div id="about" class="main_text top_margin">
-            <img class="about_photos" src="images/headshot.jpg" alt="dre">
-          <div class="about_text">
-            <p id="a_p1"></p>
-            <p id="a_p2"></p>
-            <p id="a_p3"></p>
-          </div>
-        </div>
-
-        <div id="education" class="main_text">
-          <div class="row school">
-            <div class="col-xs-6">
-              <p class="big_edu" id="mcgill_edu"></p>
-              <p id="mcgill_desc_1"></p>
-              <p id="mcgill_desc_2"></p>
-              <p id="mcgill_desc_3"></p>
-            </div>
-            <div class="col-xs-6">  
-              <img class="education_photos" src="http://tinyurl.com/websitemcgilllogo" alt="mcgill">
-            </div>
-          </div>
-
-          <div class="row school">
-            <div class="col-xs-6">
-              <p class="big_edu" id="breb_edu"></p>
-              <p id="breb_desc_1"></p>
-              <p id="breb_desc_2"></p>
-              <p id="breb_desc_3"></p>
-            </div>
-            <div class="col-xs-6">
-              <img class="education_photos" src="images/brebs.jpg" alt="brebs">
-            </div>
-          </div>
-
-        </div>
-
-        <div id="experience" class="main_text top_margin">
-          <!-- Work Experience -->
-          <p id="experience-description"></p>
-          <!-- Begin Graph -->
-          <div class="graph">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1000" height="1000" viewBox="0 0 400 800" class="shadow">
-            <defs>
-                <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth" viewBox="0 0 20 20">
-                    <path d="M0,0 L0,6 L9,3 z" fill="#00000" />
-                </marker>
-            </defs>
-            <defs>
-                <marker id="smallerArrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth" viewBox="0 0 20 20">
-                    <path d="M0,0 L0,6 L9,3 z" fill="#00000" />
-                </marker>
-            </defs>
-            <line x1="250" y1="100" x2="250" y2="215" stroke="#000" stroke-width="5" marker-end="url(#arrow)" />
-            <line x1="250" y1="410" x2="250" y2="526" stroke="#000" stroke-width="5" marker-end="url(#arrow)" />
-            <line x1="150" y1="100" x2="60" y2="170" stroke-width="2" class="line"/>
-            <line x1="150" y1="280" x2="70" y2="230" stroke-width="2" class="line"/>
-            <line x1="150" y1="550" x2="20" y2="280" stroke-width="2" class="line"/>
-            <line x1="100" y1="550" x2="50" y2="520" stroke-width="2" class="line"/>
-            <line x1="350" y1="100" x2="450" y2="300" stroke-width="2" class="line"/>
-            <line x1="350" y1="550" x2="450" y2="400" stroke-width="2" class="line"/>
-            <defs>
-              <pattern id="nuance" patternUnits="userSpaceOnUse" height="70" width="400">
-                <image x="40" y="0" height="70" width="400" xlink:href="images/logos/nuance.svg"></image>
-              </pattern>
-            </defs>
-            <rect class="clickable" onclick="test(0)" x="70" y="0" height="70" width="350" fill="url(#nuance)"/>
-            
-            <g id="textbox1">
-              <rect class="clickable" onclick="test(0)" x="70" y="0" height="100" width="360" fill="white"/>
-              <text id="exp-date-0" x="90" y="20" text-anchor="start" dy=".3em">January 2017 - May 2017</text>
-              <text id="exp-title-0" x="90" y="40" text-anchor="start" dy=".3em">Software Engineering Intern</text>
-              <text x="90" y="60" text-anchor="start" dy=".3em">Human-Computer Interaction, Chat bot,</text> 
-              <text x="90" y="80" text-anchor="start" dy=".3em">JavaScript, Python, PostgreSQL, Flask</text> 
-            </g>
-            
-            <circle cx="0" cy="210" r="60" class="circle"/>
-            <text fill="white" x="0" y="200" text-anchor="middle" dy=".3em">Web</text>
-            <text fill="white" x="0" y="220" text-anchor="middle" dy=".3em">Development</text>
-            
-            <defs>
-              <pattern id="ubisoft" patternUnits="userSpaceOnUse" height="400" width="400">
-                <image x="180" y="250" height="150" width="150" xlink:href="images/logos/ubisoft.svg"></image>
-              </pattern>
-            </defs>
-            
-            <rect class="clickable" onclick="test(1)" x="170" y="240" width="170" height="170" fill="url(#ubisoft)"/>
-            <g id="textbox2">
-                <circle class="clickable" onclick="test(1)" cx="252" cy="335" r="100" fill="white"/>
-                <text id="exp-date-1" x="165" y="300" text-anchor="start" dy=".3em">April 2017 - August 2017</text>
-                <text id="exp-title-1" x="160" y="320" text-anchor="start" dy=".4em">Web Developer Intern</text>
-                <text x="155" y="340" text-anchor="start" dy=".3em">Large Scale Online Services,</text>
-                <text x="160" y="360" text-anchor="start" dy=".3em">C#, MySQL, AWS Cloud</text>
-                <text x="170" y="380" text-anchor="start" dy=".3em">Formation</text>
-            </g>
-
-            <circle cx="500" cy="350" r="55" class="circle"/>
-            <text fill="white" x="500" y="330" text-anchor="middle" dy=".3em">Natural</text>
-            <text fill="white" x="500" y="350" text-anchor="middle" dy=".3em">Language</text>
-            <text fill="white" x="500" y="370" text-anchor="middle" dy=".3em">Processing</text>
-
-            <defs>
-              <pattern id="elementai" patternUnits="userSpaceOnUse" height="500" width="500">
-                <image x="80" y="-120" height="400" width="400" xlink:href="images/logos/elementai.svg"></image>
-              </pattern>
-            </defs>
-            <rect class="clickable" onclick="test(2)" x="60" y="540" height="80" width="430" fill="url(#elementai)"/>
-            <g id="textbox3">
-              <rect class="clickable" onclick="test(2)" x="30" y="550" height="100" width="450" fill="white"/>
-              <text id="exp-date-2" x="50" y="570" text-anchor="start" dy=".3em">May 2018 - December 2018</text>
-              <text id="exp-title-2" x="50" y="590" text-anchor="start" dy=".3em">AI Developer Intern</text>
-              <text x="50" y="610" text-anchor="start" dy=".3em">Natural Language Processing, Keras, Pandas, Matplotlib,</text>
-              <text x="50" y="630" text-anchor="start" dy=".3em">Python, Flask, Click, Jinja, Docker, Kubernetes, Helm</text>
-              <text x="50" y="650" text-anchor="start" dy=".3em"></text>
-              <text x="50" y="670" text-anchor="start" dy=".3em"></text>
-            </g>
-            <circle cx="0" cy="490" r="50" class="circle"/>
-            <text fill="white" x="0" y="480" text-anchor="middle" dy=".3em">Machine</text>
-            <text fill="white" x="0" y="500" text-anchor="middle" dy=".3em">Learning</text>
-          </svg>
-        </div>
-          <!-- End Graph -->
-        </div>
-        <div id="involvement" class="main_text top_margin">
-          <div class="row">
-            <div class="project col-xs-6 ">
-              <a href="https://wiki.mcgilleus.ca/IT_Committee">
-                <img class="hoverzoom small" src="images/involvement/eus.png" alt="IT Committee">
-              </a>
-            </div>
-
-            <div class="col-xs-6 description">
-              <a href="https://wiki.mcgilleus.ca/IT_Committee" id="inv-1-title"></a>
-              <br>
-              <p id="inv-1-description"></p>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="project col-xs-6 ">
-              <a href="https://wiki.mcgilleus.ca/Game_Development_Student%27s_Society">
-                <img class="hoverzoom small" src="images/involvement/gdm.png" alt="Game Dev McGill">
-              </a>
-            </div>
-  
-            <div class="col-xs-6 description">
-              <a href="https://wiki.mcgilleus.ca/Game_Development_Student%27s_Society" id="inv-2-title"></a>
-              <br>
-              <p id="inv-2-description"></p>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="project col-xs-6 ">
-              <a href="https://mec.mcgilleus.ca/mec_2017.html">
-                <img class="hoverzoom small" src="images/involvement/mec.png" alt="McGill Engineering Competition">
-              </a>
-            </div>
-  
-            <div class="col-xs-6 description">
-              <a href="https://mec.mcgilleus.ca/mec_2017.html" id="inv-3-title"></a>
-              <br>
-              <p id="inv-3-description"></p>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="project col-xs-6 ">
-              <a href="https://ere.mcgilleus.ca/">
-                <img class="hoverzoom small" src="images/involvement/ere.png" alt="Robo-Electronics">
-              </a>
-            </div>
-    
-            <div class="col-xs-6 description">
-              <a href="https://ere.mcgilleus.ca/" id="inv-4-title"></a>
-              <br>
-              <p id="inv-4-description"></p>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="project col-xs-6 ">
-              <a href="https://stjohn.ab.ca/">
-                <img class="hoverzoom small" src="images/involvement/sja.jpg" alt="Saint-John's Ambulance">
-              </a>
-            </div>
-            
-            <div class="col-xs-6 description">
-              <a href="https://stjohn.ab.ca/" id="inv-5-title"></a>
-              <br>
-              <p id="inv-5-description"></p>
-            </div>
-          </div>
-        </div>
-        <div id="other" class="main_text top_margin">
-          <p id="projects_more"></p>
-
-          <!-- Textify -->
-          <div class="row">
-            <div class="project col-xs-6 ">
-                <a href="https://github.com/AndreiUngur/hackatown2018/">
-                  <img class="hoverzoom small" src="https://raw.githubusercontent.com/AndreiUngur/hackatown2018/master/ux-demo.gif" alt="Media Recommender">
-                </a>
-            </div>
-
-            <div class="col-xs-6 description">
-              <a href="https://github.com/AndreiUngur/hackatown2018/" id="proj-1-title"></a>
-              <br>
-              <p id="proj-1-description"></p>
-            </div>
-          </div>
-          <br>
-
-          <!-- Media recommender -->
-          <div class="row">
-            <div class="project col-xs-6 ">
-                <a href="http://andreiungur.github.io/mediarecommender">
-                  <img class="hoverzoom small" src="images/mediarecommend.JPG" alt="Media Recommender">
-                </a>
-            </div>
-
-            <div class="col-xs-6 description">
-              <a href="http://andreiungur.github.io/mediarecommender" id="proj-2-title"></a>
-              <br>
-              <p id="proj-2-description"></p>
-            </div>
-          </div>
-          <br>
-
-          <!-- CodeJam 2017 -->
-          <div class="row">
-            <div class="project col-xs-6">
-                <a href="https://devpost.com/software/ballr-9v21gh">
-                  <img class="hoverzoom big" src="images/ballr.JPG" alt="Ballr">
-                </a>
-            </div>
-
-            <div class="description col-xs-6">
-              <a href="https://devpost.com/software/ballr-9v21gh" id="proj-3-title"></a>
-              <br>
-              <p id="proj-3-description"></p>
-            </div>
-          </div>
-          <br>
-
-          <!-- Football Analyzer -->
-          <div class="row">
-            <div class="project col-xs-6">
-                <a href="https://andreiungur.github.io/FootballPrediction/UI/">
-                  <img class="hoverzoom big" src="images/football.png" alt="FootballAnalysis">
-                </a>
-
-              </div>
-
-              <div class="description col-xs-6">
-                <a href="https://andreiungur.github.io/FootballPrediction/UI/" id="proj-4-title"></a>
-                <br>
-                <p id="proj-4-description"></p>
-              </div>
-            </div>
-            <br>
-
-            <!-- Websites -->
-            <div class="row">
-              <div class="project col-xs-6">
-                  <a href="http://www.chateaubeausoleil.ca">
-                      <img class="hoverzoom big" src="images/chalet.png" alt="chalet">
-                    </a>
-              </div>
-  
-              <div class="description col-xs-6">
-                <a href="http://www.chateaubeausoleil.ca" id="proj-5-title"></a>
-                <br>
-                <p id="proj-5-description"></p>
-              </div>
-            </div>
-            <br>
-
-            <!-- DNA Sequencer -->
-            <div class="row">
-              <div class="project col-xs-6">
-                <a href="http://www.andreiungur.github.io/dnaseq">
-                  <img class="hoverzoom small" src="images/dnaseq.JPG" alt="DNA Seq">
-                </a>
-              </div>
-  
-              <div class="description col-xs-6">
-                <a href="http://www.andreiungur.github.io/dnaseq" id="proj-6-title"></a>
-                <br>
-                <p id="proj-6-description"></p>
-              </div>
-            </div>
-            <br>
-
-            <!-- Puzzle Solver -->
-            <div class="row">
-              <div class="project col-xs-6">
-                <a href="code/solver.java">
-                  <img class="hoverzoom big" src="images/peg.jpg" alt="Peg solitaire">
-                </a>
-              </div>
-  
-              <div class="description col-xs-6">
-                <a href="code/solver.java" id="proj-7-title"></a>
-                <br>
-                <p id="proj-7-description"></p>
-              </div>
-            </div>
-            <br>
-
-            <!-- Music -->
-            <div class="row">
-              <div class="project col-xs-6">
-                <audio controls> 
-                  <source src="audio/sampleSpring.mp3" type="audio/mpeg">
-                  </audio>
-              </div>
-  
-              <div class="description col-xs-6">
-                <a href="audio/sampleSpring.mp3" id="proj-8-title"></a>
-                <br>
-                <p id="proj-8-description"></p>
-              </div>
-            </div>
-            <br>
-          </div>
-        </div>
-
-        <div id="etc" class="main_text top_margin">
-          <p id="intro_text" class="text-center"></p>
+        <div id="school-1">
+          <p align="left">Health Sciences, College Jean-de-Brebeuf</p>
         </div>
       </div>
     </div>
 
-    <!-- Smooth scrolling -->
-    <script src="scripts/smooth_slide.js"></script>
+    <!-- Experience -->
+    <div id="Experience" class="container parallax">
+      <div class="in-text line full-vertical centered"></div>
+      <div class="big-text parallax papers align-left">
+        <h2 class="centered">Experience</h2>
+          <a href='#job-0'>
+            <img id='company-0' meta='0' class="company centered" src='pictures/companies/shopify.png'/>
+          </a>
+          <a href='#job-1'>
+            <img id='company-1' meta='1' class="company eai centered" src='pictures/companies/eai.png'/>
+          </a>
+          <a href='#job-2'>
+            <img id='company-2' meta='2' class="company centered" src='pictures/companies/ubisoft.png'/>
+          </a>
+          <a href='#job-3'>
+            <img id='company-3' meta='3' class="company centered" src='pictures/companies/nuance.png'/>
+          </a>
+      </div>
+      
+      <div id="jobs-content-container" class="align-right padded" style="overflow: scroll;">
+        <div class="container">
+          <div id="job-0" class="container">
+            <div id="job-title-0" class="job-title">
+              <h3 class="blurb">
+                Shopify Inc.<br/>
+                <span style='font-family: Baskervville;'>Software Developer Intern</span><br/>
+                <span style='font-family: Baskervville;'>May 2019 - August 2019</span>
+              </h3>
+            </div>
+            <div class="job-description">
+              <p align="left"><span style='font-family: Staatlitches;'>Learned</span>.</p>
+              <p align="left">Loren Ipsum</p>
+              <p align="left"><span style='font-family: Staatlitches;'>Designed</span>.</p>
+              <p align="left">Loren Ipsum</p>
+              <p align="left"><span style='font-family: Staatlitches;'>Built</span>.</p>
+              <p align="left">Loren Ipsum.</p>
+            </div>
+          </div>
+          <div  id="job-1" class="container">
+            <div id="job-title-1" class="job-title">
+              <h3 class="blurb">
+                Element AI<br/>
+                <span style='font-family: Baskervville;'>AI Developer Intern</span><br/>
+                <span style='font-family: Baskervville;'>May 2018 - August 2018</span>
+              </h3>
+            </div>
+            <div class="job-description">
+              <p align="left"><span style='font-family: Staatlitches;'>Experimented</span>.</p>
+              <p align="left">Various Natural Language Processing models.</p>
+              <p align="left"><span style='font-family: Staatlitches;'>Deployed</span>.</p>
+              <p align="left">Brought Machine Learning models from a research phase to a deployed web application.</p>
+              <p align="left"><span style='font-family: Staatlitches;'>Streamlined</span>.</p>
+              <p align="left">Improved the development process of Machine Learning models through various tooling.</p>
+            </div>
+          </div>
+          <div  id="job-2" class="container">
+            <div id="job-title-2" class="job-title">
+              <h3 class="blurb">
+                Ubisoft<br/>
+                <span style='font-family: Baskervville;'>Web Developer Intern</span><br/>
+                <span style='font-family: Baskervville;'>May 2017 - August 2017</span>
+              </h3>
+            </div>
+            <div class="job-description">
+              <p align="left"><span style='font-family: Staatlitches;'>Learned</span>.</p>
+              <p align="left">Best practices for developing large scale web applications (authentication services).</p>
+              <p align="left"><span style='font-family: Staatlitches;'>Discovered</span>.</p>
+              <p align="left">Benefits of using in-house versus cloud-based servers by contributing to a migration from in-house to the cloud.</p>
+              <p align="left"><span style='font-family: Staatlitches;'>Maintained</span>.</p>
+              <p align="left">Contributed to the maintenance and deployment of web services used by millions worldwide.</p>
+            </div>
+          </div>
 
-  <script src="scripts/angular_main.js"></script>
+          <div  id="job-3" class="container">
+              <div id="job-title-3" class="job-title">
+                <h3 class="blurb">
+                  Nuance Communications<br/>
+                  <span style='font-family: Baskervville;'>Software Engineer Intern</span><br/>
+                  <span style='font-family: Baskervville;'>January 2017 - April 2017</span>
+                </h3>
+              </div>
+              <div class="job-description">
+                <p align="left"><span style='font-family: Staatlitches;'>Developed</span>.</p>
+                <p align="left">Brought a Natural Language Processing application from its infancy to feature-completeness.</p>
+                <p align="left"><span style='font-family: Staatlitches;'>Designed</span>.</p>
+                <p align="left">Implemented various voice-based human-computer interaction features, such as pronoun comprehension and conversation topic recommendation based on historic data.</p>
+                <p align="left"><span style='font-family: Staatlitches;'>Integrated</span>.</p>
+                <p align="left">Leveraged a cloud-based API to build an application for a vehicle-based embedded system.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="in-text line full-vertical centered"></div>
+  </div>
 
-  <!-- Write data in different languages -->
-  <script src="scripts/lang_writer.js"></script>
+    <!-- Projects -->
+    <div id="Projects" class="container">
+      <div class="in-text line full-vertical centered"></div>
+      <div class="big-text parallax wood align-left">
+        <div class="container">
+          <h2 class="centered">Projects</h2>
+            <a href='#project-0'>
+              <div class='selector-0 selector background centered'></div>
+              <div id="projects-selector-0" class='selector-0 selector centered'></div>
+            </a>
+            <a href='#project-1'>
+                <div class='selector-1 selector background centered'></div>
+                <div id="projects-selector-1" class='selector-1 selector centered'></div>  
+            </a>
+    
+            <a href='#project-2'>
+                <div class='selector-2 selector background centered'></div>
+                <div id="projects-selector-2" class='selector-2 selector centered'></div>  
+            </a>
+        </div>
+      </div>
+      <div id="projects-content-container" class="align-right padded"  style="overflow: scroll;">
+        <div class="container">
+          <p class="centered">Projects below! continue scrolling...</p>
+        </div>
+        <div id="project-0" class="container">
+          <img id="project-img-0" class="project-img centered" src='pictures/techcabinet.png'/>
+        </div>
+        <div id="project-1" class="container">
+            <img id="project-img-1" class="project-img centered" src='pictures/repaird.jpg'/>
+        </div>
+        <div id="project-2" class="container">
+            <img id="project-img-2" class="project-img centered" src='pictures/hackatown-demo.gif'/>
+        </div>
+      </div>
+    </div>
 
-  <!-- Validate name -->
-  <script src="scripts/name_validation.js"></script>
-    <!--footer>
-      Andreipage is maintained by https://github.com/AndreiUngur
-    </footer-->
-  </body>
-  </html>
+  <!-- Involvement -->
+    <div id="Involvement" class="container parallax">
+        <div class="in-text line full-vertical centered"></div>
+        <div class="big-text parallax skyline align-left">
+      <h2 class="centered">Involvement</h2>
+      <a href='#involvement-0'>
+          <div class='selector-0 selector background centered'></div>
+          <div id="involvement-selector-0" class='selector-0 selector centered'></div>
+        </a>
+        <a href='#involvement-1'>
+            <div class='selector-1 selector background centered'></div>
+            <div id="involvement-selector-1" class='selector-1 selector centered'></div>  
+        </a>
+
+        <a href='#involvement-2'>
+            <div class='selector-2 selector background centered'></div>
+            <div id="involvement-selector-2" class='selector-2 selector centered'></div>  
+        </a>
+
+      </div>
+    <div id="involvement-content-container" class="align-right padded"  style="overflow: scroll;">
+      <div class="container">
+        <p class="centered">Involvement below! continue scrolling...</p>
+      </div>
+      <div id="involvement-0" class="container involvement">
+        <div class="involvement-heading">
+          <div class="align-left">
+            <h3>
+            <img id="involvement-logo-0" class="involvement-logo" src='pictures/eus.png'/>
+          </h3>
+          </div> 
+          <div class="align-right">
+            <h3>
+              Engineering Undergraduate Society<br/>
+              <span style='font-family: Baskervville;'>I.T. Director</span><br/>
+              <span style='font-family: Baskervville;'>2018 - 2019</span>
+            </h3>
+          </div>
+        </div>
+        <div class="involvement-content">
+          <p align="left"><span style='font-family: Staatlitches;'>Position</span>.</p>
+          <p align="left">I was the 2018-2019 IT Director of the EUS.</p>
+          <p align="left"><span style='font-family: Staatlitches;'>Responsibility</span>.</p>
+          <p align="left">I was the head of a team of 8 members spread across three groups: curators of our internal Wiki, a manager of public displays and webmasters.</p>
+          <p align="left"><span style='font-family: Staatlitches;'>Impact</span>.</p>
+          <p align="left">I manage the infrastructure of various services used by all of McGill's undergraduate students in Engineering, namely Room Booking and Voting platforms, using: Apache, PHP, MySQL.</p>
+        </div>
+      </div>
+
+      <div id="involvement-1" class="container involvement">
+        <div class="involvement-heading">
+          <div class="align-left">
+            <h3>
+              <img id="involvement-logo-1" class="involvement-logo" src='pictures/gdm.png'/>
+            </h3>
+          </div> 
+
+          <div class="align-right">
+            <h3>
+              Game Dev McGill<br/>
+              <span style='font-family: Baskervville;'>VP Finances</span><br/>
+              <span style='font-family: Baskervville;'>2017 - 2018</span>
+            </h3>
+          </div>
+        </div>
+        <div class="involvement-content">
+            <p align="left"><span style='font-family: Staatlitches;'>Position</span>.</p>
+            <p align="left">I was the VP Finance of McGill's first ever Game Development club (2017-2018).</p>
+            <p align="left"><span style='font-family: Staatlitches;'>Responsibility</span>.</p>
+            <p align="left">Within this first year of operation, the club grew to ~80 members.</p>
+            <p align="left"><span style='font-family: Staatlitches;'>Impact</span>.</p>
+            <p align="left">I handled sponsors and expenses and our budget. I also contributed to organizing the 2017 and 2018 versions of the club's Game Jam (~150 participants).</p>
+        </div>
+      </div>
+
+      <div id="involvement-2" class="container">
+        <div class="involvement-heading">
+          <div class="align-left">
+            <h3>
+              <img id="involvement-logo-2" class="involvement-logo" src='pictures/sja.jpg'/>
+            </h3>
+          </div> 
+
+          <div class="align-right">
+            <h3>
+              St. John Ambulance<br/>
+              <span style='font-family: Baskervville;'>First Responder,</span><br/>
+              <span style='font-family: Baskervville;'>Assistant Training Coordinator</span><br/>
+              <span style='font-family: Baskervville;'>2013 - 2016</span>
+            </h3>
+          </div>
+        </div>
+        <div class="involvement-content">
+            <p align="left"><span style='font-family: Staatlitches;'>Position</span>.</p>
+            <p align="left">From 2013 to 2016, I was a First Responder within Saint-John Ambulance.</p>
+            <p align="left"><span style='font-family: Staatlitches;'>Responsibility</span>.</p>
+            <p align="left">I provided first aid at numerous events ranging from Bell Center shows to local hockey tournaments.</p>
+            <p align="left"><span style='font-family: Staatlitches;'>Impact</span>.</p>
+            <p align="left">I became assistant training co-ordinator in 2015 and hosted trainings for a team of ~50 members, in addition to ensuring they achieved the correct certifications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="selectors.js"></script>
+</body>
+</html>
