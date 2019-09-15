@@ -175,7 +175,7 @@ html{
 }
 
 .jumbotron{
-  background-image: url('../images/skyline.JPG');
+  background-image: url('../images/skyline.jpg');
   background-position: center;
   background-size: cover;
   background-color: black/*#000033*/;
