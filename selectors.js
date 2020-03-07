@@ -65,7 +65,6 @@ projects_container.addEventListener('scroll', function (event) {
 
 jobs_container.addEventListener('scroll', function (event) {
     for (i in jobs){
-        console.log(isInViewport(jobs[i]));
         if (isInViewport(jobs[i])) {
             // Minus one, modulo 4 (len of jobs)
             for (l in company_logos){
