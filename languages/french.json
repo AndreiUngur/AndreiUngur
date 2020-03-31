@@ -1,0 +1,224 @@
+{
+    "sections": {
+        "about": {
+            "header": "À propos",
+            "blurb": "Ingénieur logiciel ambitieux et curieux avec une passion pour le dévelopement web et l'intelligence artificielle. Présentement dévelopeur chez Shopify.",
+            "content": [
+                {
+                    "header": "Autodidacte",
+                    "body": [
+                        "Ces temps-ci, je lis couramment sur les frameworks de Javascript et Ruby et sur les avancées en NLP.",
+                        "Dans mes temps libres j'apprends également le Japonais et le dévelopement mobile."
+                    ]
+                },
+                {
+                    "header": "Musicien",
+                    "body": [
+                        "Je joue de la guitare et je chante depuis plusieurs années. J'enregistre également de la musique lorsque le temps me le permet."
+                    ]
+                },
+                {
+                    "header": "Gradué",
+                    "body": [
+                        "Génie Logiciel, Université McGill (Gradué en Décembre 2019)",
+                        "cGPA: 3.63 / 4.0",
+                        "Sciences de la Sante, College Jean-de-Brebeuf (Gradué en Mai 2015)"
+                    ]
+                }
+            ]
+        },
+        "experience": {
+            "header": "Expérience",
+            "content": [
+                {
+                    "header": {
+                        "title": "Shopify Inc.",
+                        "position": "Developeur (Stagiaire)",
+                        "date": "Mai 2019 - Aout 2019"
+                    },
+                    "body": [
+                        {
+                            "header": "Apprentissages",
+                            "body": "Appris à utiliser davantage le langage Ruby et le framework Rails. J'ai également appris divers concepts de finances et comptabilité."
+                        },
+                        {
+                            "header": "Échelle",
+                            "body": "Contribué à la construction de processeurs et d'outillage pour gérer un large volume de donnés."
+                        },
+                        {
+                            "header": "Données",
+                            "body": "Investigué de grandes bases de données pour créer des rapports expliquant ces données à d'autres équipes."
+                        }
+                    ]
+                },
+                {
+                    "header": {
+                        "title": "Element AI",
+                        "position": "Developer AI (Stagiaire)",
+                        "date": "Mai 2018 - Aout 2018"
+                    },
+                    "body": [
+                        {
+                            "header": "Expériments",
+                            "body": "Effectué plusieurs expériments avec des modèles de \"Natural Language Processing\"."
+                        },
+                        {
+                            "header": "Déployments",
+                            "body": "Construit des applications web deployées à partir de modeles d'Intelligence Artificielle."
+                        },
+                        {
+                            "header": "Améliorations",
+                            "body": "Dévelopé de l'outillage pour améliorer l'expérimentation de nouveaux modèles d'Intelligence Artificielle."
+                        }
+                    ]
+                },
+                {
+                    "header": {
+                        "title": "Ubisoft",
+                        "position": "Dévelopeur Web (Stagiaire)",
+                        "date": "Avril 2017 - Aout 2017"
+                    },
+                    "body": [
+                        {
+                            "header": "Apprentissages",
+                            "body": "Appris à propos des meilleurs pratiques pour déveloper et déployer des applications web à grande échelle, en particulier un service d'authentication."
+                        },
+                        {
+                            "header": "Cloud",
+                            "body": "Exploré les avantages et inconvenients d'utiliser des serveurs hébergés localement versus dans le \"Cloud\" en contribuant à une migration vers celui-ci."
+                        },
+                        {
+                            "header": "Maintenance",
+                            "body": "Contribué à la maintenance et le déploiement de services web utilisés par des millions de personnes à travers le monde."
+                        }
+                    ]
+                },
+                {
+                    "header": {
+                        "title": "Nuance Communications",
+                        "position": "Ingénieur Logiciel (Stagiaire)",
+                        "date": "Janvier 2017 - Avril 2017"
+                    },
+                    "body": [
+                        {
+                            "header": "Dévelopement",
+                            "body": "Porté un projet de \"Natural Language Processing\" de son enfance à une fonctionalité complète."
+                        },
+                        {
+                            "header": "Design",
+                            "body": "Implémenté plusieurs fonctionalités pour améliorer l'expérience des utilisateurs, notamment la résolution de pronoms et la recommendation de sujets de conversation basée sur la conversation en cours."
+                        },
+                        {
+                            "header": "Intégration",
+                            "body": "Utilisé un API dans le \"cloud\" pour construire un système intégré pour les automobiles."
+                        }
+                    ]
+                }
+            ]
+        },
+        "projects": {
+          "header": "Projets",
+          "blurb": "Au cours de mes études, j'ai travaillé sur quelques projets personnels dans le but d'apprendre de nouvelles technologies.",
+          "content": [
+              {
+                  "header": "Plateforme de locations pour le département de Génie",
+                  "body": [
+                      "En utilisant Flask pour le back-end et React pour le front-end, j'ai construit un système de locations pour le département de génie.",
+                      "Il utilise une base de données MySQL et il fut déployé à travers AWS et comprend également un système d'authentication avec Outlook."
+                  ],
+                  "link": "https://rental.mcgilleus.ca/",
+                  "github_link": "https://github.com/McGillEUS/techcabinet"
+              },
+              {
+                  "header": "Repaird (Hackathon de la BDC)",
+                  "body": [
+                    "Construit le back-end d'une application pour gèrer l'état d'une voiture et faciliter la maintenance.",
+                    "J'ai également exploré les données fournies dans une grande base de données MySQL afin que notre équipe fasse un choix éclairé sur la direction du projet.",
+                    "Nous avons remporté le premier prix de ce Hackathon."
+                  ],
+                  "link": "https://devpost.com/software/repaird"
+              },
+              {
+                  "header": "Textify (Hackathon de la Polytechnique de Montréal)",
+                  "body": [
+                    "Construit un décodeur de caractères dessinés à la main pour aider les voyageurs à comprendre des langages étrangers.",
+                    "Il s'agissait de ma première expérience dans l'intélligence artificelle. J'ai construit un modèle de reconnaissance visuelle dans Keras entraîné sur un dataset populaire, MNIST."
+                  ],
+                  "github_link": "https://github.com/ungurandrei/hackatown2018"
+              }
+          ] 
+        },
+        "involvement": {
+          "header": "Engagement",
+          "blurb": "J'adore m'impliquer dans différentes communautés liées à mes passions. Ci-dessous sont quelques organisations auxquelles j'ai contribué récemment.",
+          "content": [
+              {
+                  "header": {
+                      "title": "Société Étudiante d'Inginérie",
+                      "position": "Directeur des T.I.",
+                      "date": "2018 ~ 2019"
+                  },
+                  "body": [
+                      {
+                          "header": "Apprentissages",
+                          "body": "En tant que responsable des technologies de l'information, j'ai amélioré mes connaissances en serveurs Linux et bases de données MySQL. J'ai également dévelopé mes compétences de gestion."
+                      },
+                      {
+                          "header": "Responsabilité",
+                          "body": "J'étais à la tête d'une équipe de 8 membres divisés en trois groupes: les conservateurs de notre Wiki interne, l'administrateur d'affichages publiques dans l'école et des administrateurs Web."
+                      },
+                      {
+                          "header": "Impact",
+                          "body": "J'ai maintenu l'infrastructure des services T.I. utilisée par tous les étudiants en génie de l'école. J'ai également amélioré cette infrastructure en complétant une migration vers AWS et en introduisant des technologies modernes (React, Flask)."
+                      }
+                  ],
+                  "link": ""
+              },
+              {
+                  "header": {
+                      "title": "Game Dev McGill",
+                      "position": "V.P. Finances",
+                      "date": "2017 ~ 2018"
+                  },
+                  "body": [
+                      {
+                          "header": "Apprentissages",
+                          "body": "Ne connaissant que peu en finances auparavant, j'ai appris à gérer le budget d'un club durant sa première année d'opérations."
+                      },
+                      {
+                          "header": "Responsibilités",
+                          "body": "J'étais tâché de gérer les relations avec les sponsors, le budget et les dépenses du club. J'ai également contribué aux logistiques et finances de l'organization des version 2017 et 2018 du Game Jam organizé par le club (~150 membres)."
+                      },
+                      {
+                          "header": "Impact",
+                          "body": "Notre équipe a su croître le club jusqu'à 80 membres lors de sa première année d'opérations, avec un budget soutenable qui a permis une croissance continue dans les années suivantes."
+                      }
+                  ],
+                  "link": ""
+              },
+              {
+                  "header": {
+                      "title": "Ambulance St. Jean",
+                      "position": "Premier Répondant, Assistant Coordinateur des Formations",
+                      "date": "2013 ~ 2016"
+                  },
+                  "body": [
+                      {
+                          "header": "Apprentissages",
+                          "body": "En tant que premier répondant, j'ai appris différentes techniques de premier soin et de gestion de situation de stress."
+                      },
+                      {
+                          "header": "Responsibilité",
+                          "body": "J'ai fourni les premiers soins à un éventail d'évenements partant de shows au Centre Bell et allant jusqu'à des tournois de Hockey locaux."
+                      },
+                      {
+                          "header": "Impact.",
+                          "body": "Avec le temps, je suis devenu coordinateur des formations de notre équipe d'environ 50 membres. J'organisais des séances de formation et je m'assurais que les membres suivent les cours nécessaires pour être certifiés."
+                      }
+                  ],
+                  "link": ""
+              }
+          ]
+        }
+    }
+}

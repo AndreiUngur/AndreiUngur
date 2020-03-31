@@ -72,7 +72,7 @@ COLOR PALETTE 2:
 
 #blurb-intro{
 	font-style: italic;
-	margin-top: 15%;
+	margin-top: 12%;
 	margin-bottom:15%;
 }
 
@@ -244,7 +244,7 @@ body{
 
 #company-1{
 	position: absolute;
-	top: 70%;
+	top: 60%;
 	left: 100%;
 	width: 50px;
 	z-index: 1;
@@ -252,13 +252,21 @@ body{
 
 #company-2{
 	position: absolute;
-	top: 80%;
+	top: 70%;
 	left: 100%;
 	width: 50px;
 	z-index: 1;
 }
 
 #company-3{
+	position: absolute;
+	top: 80%;
+	left: 100%;
+	width: 50px;	
+	z-index: 1;
+}
+
+#company-4{
 	position: absolute;
 	top: 90%;
 	left: 100%;
@@ -279,20 +287,26 @@ body{
 	
 	#company-1{
 		top: 100%;
-		left: 40%;
-		width: 30px;
+		left: 45%;
+		width: 20px;
 	}
 	
 	#company-2{
 		top: 100%;
 		left: 60%;
-		width: 30px;
+		width: 20px;
 	}
 	
 	#company-3{
 		top: 100%;
-		left: 80%;
-		width: 30px;	
+		left: 75%;
+		width: 20px;	
+	}
+	
+	#company-4{
+		top: 100%;
+		left: 90%;
+		width: 20px;	
 	}
 }
 
@@ -426,7 +440,7 @@ h1{
 	}
 }
 
-.job-description{
+.job-content{
 	margin-left: 5%;
 }
 
@@ -440,7 +454,7 @@ h1{
     	height: 100%;
     }
 
-	.job-description{
+	.job-content{
 		margin-left: 0%;
 	}
 
@@ -670,8 +684,20 @@ h1{
 	background-size: cover;
 }
 
+.project-content{
+	position: absolute;
+	bottom: 20%;
+	left: 5%;
+}
+
 .project-img{
 	max-width: 100%;
+	top: 35%;
+}
+
+.project-title{
+	position: absolute;
+	top: 10%;
 }
 
 @media only screen and (min-width: 600px) {

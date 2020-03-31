@@ -16,18 +16,18 @@
     <!-- Front Page -->
     <div id="front-page" class="container big-text">
       <div class="line full-vertical centered"></div>
-      <div id="label-english" class="centered category circle-0">English</div>
+      <div id="label-english" class="centered category circle-0"><a onclick="get_english_content()">English</a></div>
       <div class="centered language circle left-half circle-0"></div>
-      <div id="label-french" class="centered category circle-1">French</div>
+      <div id="label-french" class="centered category circle-1"><a onclick="get_french_content()">Français</a></div>
       <div class="centered language circle right-half circle-1"></div>
       <div class="centered circle right-half circle-2"></div>
-      <div id="label-about" class="centered category circle-2"><a href="#About">About</a></div>
+      <div id="label-about" class="centered category circle-2"><a href="#About"></a></div>
       <div class="centered circle left-half circle-3"></div>
-      <div id="label-experience" class="centered category circle-3"><a href="#Experience">Experience</a></div>
+      <div id="label-experience" class="centered category circle-3"><a href="#Experience"></a></div>
       <div class="centered circle right-half circle-4"></div>
-      <div id="label-projects" class="centered category circle-4"><a href="#Projects">Projects</a></div>
+      <div id="label-projects" class="centered category circle-4"><a href="#Projects"></a></div>
       <div class="centered circle left-half circle-5"></div>
-      <div id="label-involvement" class="centered category circle-5"><a href="#Involvement">Involvement</a></div>
+      <div id="label-involvement" class="centered category circle-5"><a href="#Involvement"></a></div>
       <h1 id='name' class="centered">
         <span style="margin-right: 100px;">Andrei</span><br/><span style="margin-left: 100px;">Ungur</span>
         <div class="line i-extension centered"></div>
@@ -40,23 +40,13 @@
       <div class="in-text line full-vertical centered"></div>
       <div class="big-text parallax wood align-left">
         <img id="headshot" class='centered' src='pictures/headshot.png' style='border-radius: 50%;'/>
-        <h2 class="centered">About</h2>
+        <h2 class="centered"></h2>
       </div>
 
       <!-- TODO: Maybe force this area to never overflow? -->
       <div class="align-right padded" style="overflow: scroll;">
-        <p id="blurb-intro" class="blurb" align="left">Driven, curious Software Engineer with a passion for Web Development and Machine Learning.</p>
-        <p align="left"><span class="bolded">Constant learner</span>.</p>
-        <p align="left">Currently self-teaching myself Japanese & Mobile Development.</p>
-        <p align="left">Keeping up with advances in Natural Language Processing and new Javascript/Ruby frameworks.</p>
-        <p align="left"><span class="bolded">Musician</span>.</p>
-        <p align="left">Self-taught guitar player and singer.</p>
-        <p align="left"><span class="bolded">Graduate</span>.</p>
-        <div id="school-0">
-          <p align="left">Software Engineering, McGill University</p><p align="left">(cGPA: 3.63/4.0)</p>
-        </div>
-        <div id="school-1">
-          <p align="left">Health Sciences, College Jean-de-Brebeuf</p>
+        <p id="blurb-intro" class="blurb" align="left"></p>
+        <div class="body">
         </div>
       </div>
     </div>
@@ -65,7 +55,8 @@
     <div id="Experience" class="container parallax">
       <div class="in-text line full-vertical centered"></div>
       <div class="big-text parallax papers align-left">
-        <h2 class="centered">Experience</h2>
+        <h2 class="centered"></h2>
+        <div id='selectors'>
           <a href='#job-0'>
             <img id='company-0' meta='0' class="company centered" src='pictures/companies/shopify.png'/>
           </a>
@@ -78,6 +69,7 @@
           <a href='#job-3'>
             <img id='company-3' meta='3' class="company centered" src='pictures/companies/nuance.png'/>
           </a>
+        </div>
       </div>
       
       <div id="jobs-content-container" class="align-right padded" style="overflow: scroll;">
@@ -85,76 +77,33 @@
           <div class="container">
             <div id="job-0"></div>
             <div id="job-title-0" class="job-title">
-              <h3 class="blurb">
-                Shopify Inc.<br/>
-                <span class="light-heading">Software Developer Intern</span><br/>
-                <span class="light-heading">May 2019 - August 2019</span>
-              </h3>
+              <h3 class="blurb"></h3>
             </div>
-            <div class="job-description">
-              <p align="left"><span class="bolded">Learned</span>.</p>
-              <p align="left">Loren Ipsum</p>
-              <p align="left"><span class="bolded">Designed</span>.</p>
-              <p align="left">Loren Ipsum</p>
-              <p align="left"><span class="bolded">Built</span>.</p>
-              <p align="left">Loren Ipsum.</p>
+            <div id ='job-content-0' class="job-content">
             </div>
           </div>
-
           <div class="container">
             <div id="job-1"></div>
             <div id="job-title-1" class="job-title">
-              <h3 class="blurb">
-                Element AI<br/>
-                <span class="light-heading">AI Developer Intern</span><br/>
-                <span class="light-heading">May 2018 - August 2018</span>
-              </h3>
+              <h3 class="blurb"></h3>
             </div>
-            <div class="job-description">
-              <p align="left"><span class="bolded">Experimented</span>.</p>
-              <p align="left">Various Natural Language Processing models.</p>
-              <p align="left"><span class="bolded">Deployed</span>.</p>
-              <p align="left">Brought Machine Learning models from a research phase to a deployed web application.</p>
-              <p align="left"><span class="bolded">Streamlined</span>.</p>
-              <p align="left">Improved the development process of Machine Learning models through various tooling.</p>
+            <div id ='job-content-1' class="job-content">
             </div>
           </div>
-
           <div class="container">
             <div id="job-2"></div>
             <div id="job-title-2" class="job-title">
-              <h3 class="blurb">
-                Ubisoft<br/>
-                <span class="light-heading">Web Developer Intern</span><br/>
-                <span class="light-heading">May 2017 - August 2017</span>
-              </h3>
+              <h3 class="blurb"></h3>
             </div>
-            <div class="job-description">
-              <p align="left"><span class="bolded">Learned</span>.</p>
-              <p align="left">Best practices for developing large scale web applications (authentication services).</p>
-              <p align="left"><span class="bolded">Discovered</span>.</p>
-              <p align="left">Benefits of using in-house versus cloud-based servers by contributing to a migration from in-house to the cloud.</p>
-              <p align="left"><span class="bolded">Maintained</span>.</p>
-              <p align="left">Contributed to the maintenance and deployment of web services used by millions worldwide.</p>
+            <div id ='job-content-2' class="job-content">
             </div>
           </div>
-
           <div class="container">
             <div id="job-3"></div>
             <div id="job-title-3" class="job-title">
-              <h3 class="blurb">
-                Nuance Communications<br/>
-                <span class="light-heading">Software Engineer Intern</span><br/>
-                <span class="light-heading">January 2017 - April 2017</span>
-              </h3>
+              <h3 class="blurb"></h3>
             </div>
-            <div class="job-description">
-              <p align="left"><span class="bolded">Developed</span>.</p>
-              <p align="left">Brought a Natural Language Processing application from its infancy to feature-completeness.</p>
-              <p align="left"><span class="bolded">Designed</span>.</p>
-              <p align="left">Implemented various voice-based human-computer interaction features, such as pronoun comprehension and conversation topic recommendation based on historic data.</p>
-              <p align="left"><span class="bolded">Integrated</span>.</p>
-              <p align="left">Leveraged a cloud-based API to build an application for a vehicle-based embedded system.</p>
+            <div id ='job-content-3' class="job-content">
             </div>
           </div>
         </div>
@@ -167,7 +116,8 @@
       <div class="in-text line full-vertical centered"></div>
       <div class="big-text parallax wood align-left">
         <div class="container">
-          <h2 class="centered">Projects</h2>
+          <h2 class="centered"></h2>
+          <div id="selectors">
             <a href='#project-0'>
               <div class='selector-0 selector background centered'></div>
               <div id="projects-selector-0" class='selector-0 selector centered'></div>
@@ -176,144 +126,125 @@
                 <div class='selector-1 selector background centered'></div>
                 <div id="projects-selector-1" class='selector-1 selector centered'></div>  
             </a>
-    
+
             <a href='#project-2'>
                 <div class='selector-2 selector background centered'></div>
                 <div id="projects-selector-2" class='selector-2 selector centered'></div>  
             </a>
+          </div>
         </div>
       </div>
       <div id="projects-content-container" class="align-right padded"  style="overflow: scroll;">
         <div class="vertical-center-padding"></div>
-        <div class="container">
-          <p class="centered">Projects below! continue scrolling...</p>
+        <div class="intro container">
+          <p class="centered"></p>
         </div>
         <div id="project-0"></div>
         <div class="vertical-center-padding"></div>
         <div class="container">
+          <div id="project-title-0" class="project-title bolded"></div>
           <img id="project-img-0" class="project-img centered" src='pictures/techcabinet.png'/>
+          <div id="project-content-0" class="project-content"></div>
         </div>
         <div id="project-1"></div>
         <div class="vertical-center-padding"></div>
         <div class="container">
-            <img id="project-img-1" class="project-img centered" src='pictures/repaird.jpg'/>
+          <div id="project-title-1" class="project-title bolded"></div>
+          <img id="project-img-1" class="project-img centered" src='pictures/repaird.jpg'/>
+          <div id="project-content-1" class="project-content"></div>
         </div>
         <div id="project-2"></div>
         <div class="vertical-center-padding"></div>
         <div class="container">
-            <img id="project-img-2" class="project-img centered" src='pictures/hackatown-demo.gif'/>
+          <div id="project-title-2" class="project-title bolded"></div>
+          <img id="project-img-2" class="project-img centered" src='pictures/hackatown-demo.gif'/>
+          <div id="project-content-2" class="project-content"></div>
         </div>
       </div>
     </div>
 
   <!-- Involvement -->
     <div id="Involvement" class="container parallax">
-        <div class="in-text line full-vertical centered"></div>
-        <div class="big-text parallax skyline align-left">
-      <h2 class="centered">Involvement</h2>
-      <a href='#involvement-0'>
-          <div class='selector-0 selector background centered'></div>
-          <div id="involvement-selector-0" class='selector-0 selector centered'></div>
-        </a>
-        <a href='#involvement-1'>
+      <div class="in-text line full-vertical centered"></div>
+      <div class="big-text parallax skyline align-left">
+        <div id='selectors'>
+          <h2 class="centered"></h2>
+          <a href='#involvement-0'>
+            <div class='selector-0 selector background centered'></div>
+            <div id="involvement-selector-0" class='selector-0 selector centered'></div>
+          </a>
+          <a href='#involvement-1'>
             <div class='selector-1 selector background centered'></div>
             <div id="involvement-selector-1" class='selector-1 selector centered'></div>  
-        </a>
-
-        <a href='#involvement-2'>
+          </a>
+          <a href='#involvement-2'>
             <div class='selector-2 selector background centered'></div>
             <div id="involvement-selector-2" class='selector-2 selector centered'></div>  
-        </a>
-
+          </a>
+        </div>
       </div>
-    <div id="involvement-content-container" class="align-right padded"  style="overflow: scroll;">
-      <div class="vertical-center-padding"></div>
-      <div class="container">
-        <p class="centered">Involvement below! continue scrolling...</p>
-      </div>
-      <div id="involvement-0"></div>
-      <div class="container involvement">
-        <div class="involvement-heading">
-          <div class="align-left">
-            <h3>
-            <img id="involvement-logo-0" class="involvement-logo" src='pictures/eus.png'/>
-          </h3>
-          </div> 
-          <div class="align-right">
-            <h3>
-              Engineering Undergraduate Society<br/>
-              <span class="light-heading">I.T. Director</span><br/>
-              <span class="light-heading">2018 - 2019</span>
+      <div id="involvement-content-container" class="align-right padded"  style="overflow: scroll;">
+        <div class="vertical-center-padding"></div>
+        <div class="intro container">
+          <p class="centered"></p>
+        </div>
+        <div id="involvement-0"></div>
+        <div class="container involvement">
+          <div class="involvement-heading">
+            <div class="align-left">
+              <h3>
+              <img id="involvement-logo-0" class="involvement-logo" src='pictures/eus.png'/>
             </h3>
+            </div> 
+            <div id="involvement-title-0" class="align-right">
+              <h3>
+              </h3>
+            </div>
+          </div>
+          <div id="involvement-content-0" class="involvement-content">
           </div>
         </div>
-        <div class="involvement-content">
-          <p align="left"><span class="bolded">Position</span>.</p>
-          <p align="left">I was the 2018-2019 IT Director of the EUS.</p>
-          <p align="left"><span class="bolded">Responsibility</span>.</p>
-          <p align="left">I was the head of a team of 8 members spread across three groups: curators of our internal Wiki, a manager of public displays and webmasters.</p>
-          <p align="left"><span class="bolded">Impact</span>.</p>
-          <p align="left">I manage the infrastructure of various services used by all of McGill's undergraduate students in Engineering, namely Room Booking and Voting platforms, using: Apache, PHP, MySQL.</p>
-        </div>
-      </div>
 
-      <div id="involvement-1"></div>
-      <div class="container involvement">
-        <div class="involvement-heading">
-          <div class="align-left">
-            <h3>
-              <img id="involvement-logo-1" class="involvement-logo" src='pictures/gdm.png'/>
-            </h3>
-          </div> 
+        <div id="involvement-1"></div>
+        <div class="container involvement">
+          <div class="involvement-heading">
+            <div class="align-left">
+              <h3>
+                <img id="involvement-logo-1" class="involvement-logo" src='pictures/gdm.png'/>
+              </h3>
+            </div> 
 
-          <div class="align-right">
-            <h3>
-              Game Dev McGill<br/>
-              <span class="light-heading">VP Finances</span><br/>
-              <span class="light-heading">2017 - 2018</span>
-            </h3>
+            <div id="involvement-title-1" class="align-right">
+              <h3>
+              </h3>
+            </div>
+          </div>
+          <div id="involvement-content-1" class="involvement-content">
           </div>
         </div>
-        <div class="involvement-content">
-            <p align="left"><span class="bolded">Position</span>.</p>
-            <p align="left">I was the VP Finance of McGill's first ever Game Development club (2017-2018).</p>
-            <p align="left"><span class="bolded">Responsibility</span>.</p>
-            <p align="left">Within this first year of operation, the club grew to ~80 members.</p>
-            <p align="left"><span class="bolded">Impact</span>.</p>
-            <p align="left">I handled sponsors and expenses and our budget. I also contributed to organizing the 2017 and 2018 versions of the club's Game Jam (~150 participants).</p>
-        </div>
-      </div>
 
-      <div id="involvement-2"></div>
-      <div class="container">
-        <div class="involvement-heading">
-          <div class="align-left">
-            <h3>
-              <img id="involvement-logo-2" class="involvement-logo" src='pictures/sja.jpg'/>
-            </h3>
-          </div> 
+        <div id="involvement-2"></div>
+        <div class="container">
+          <div class="involvement-heading">
+            <div class="align-left">
+              <h3>
+                <img id="involvement-logo-2" class="involvement-logo" src='pictures/sja.jpg'/>
+              </h3>
+            </div> 
 
-          <div class="align-right">
-            <h3>
-              St. John Ambulance<br/>
-              <span class="light-heading">First Responder,</span><br/>
-              <span class="light-heading">Assistant Training Coordinator</span><br/>
-              <span class="light-heading">2013 - 2016</span>
-            </h3>
+            <div id="involvement-title-2" class="align-right">
+              <h3>
+              </h3>
+            </div>
           </div>
-        </div>
-        <div class="involvement-content">
-            <p align="left"><span class="bolded">Position</span>.</p>
-            <p align="left">From 2013 to 2016, I was a First Responder within Saint-John Ambulance.</p>
-            <p align="left"><span class="bolded">Responsibility</span>.</p>
-            <p align="left">I provided first aid at numerous events ranging from Bell Center shows to local hockey tournaments.</p>
-            <p align="left"><span class="bolded">Impact</span>.</p>
-            <p align="left">I became assistant training co-ordinator in 2015 and hosted trainings for a team of ~50 members, in addition to ensuring they achieved the correct certifications.</p>
+          <div id="involvement-content-2" class="involvement-content">
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<script src="selectors.js"></script>
+<script src="scripts/selectors.js"></script>
+<script src="scripts/localization.js"></script>
 </body>
 </html>
