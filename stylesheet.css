@@ -575,10 +575,12 @@ h1{
 
 #label-english{
 	margin-left: -120px;
+	cursor: pointer;
 }
 
 #label-french{
 	margin-left: 120px;
+	cursor: pointer;
 }
 
 #label-about{
