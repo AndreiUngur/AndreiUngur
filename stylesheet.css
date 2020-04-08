@@ -79,7 +79,7 @@ COLOR PALETTE 2:
 
 @media only screen and (max-width: 1400px){
 	.blurb{
-		padding-top: 8%;
+		padding-top: 2%;
 	}
 }
 
@@ -418,6 +418,10 @@ body{
 	}	
 }
 
+#firstname{
+	margin-right: 100px;
+}
+
 .forest{
 	background: url('pictures/forest.jpg');
 }
@@ -493,7 +497,7 @@ h1{
     }
 
     #involvement-content-container{
-		top: 0%;
+		top: 10px;
 		padding-right: 0%;
     	height: 100%;
     }
@@ -552,7 +556,7 @@ h1{
 
 @media only screen and (max-width: 750px) {
     #jobs-content-container{
-    	top: 0%;
+    	top: 10px;
     	height: 100%;
     }
 
@@ -630,6 +634,10 @@ h1{
 	background: #4a4e69;
 }
 
+#lastname{
+	margin-left: 100px;
+}
+
 .light-heading{
 	font-family: Baskervville;
 }
@@ -695,7 +703,7 @@ h1{
 	}
 
 	#projects-content-container{
-    	top: 0%;
+    	top: 10px;
     	height: 100%;
     }
 
@@ -786,39 +794,6 @@ h1{
 	right: 16px;
 }
 
-@media only screen and (min-width: 750px) {
-	.u-extension {
-		left: 30px;
-		top: 88px;
-		width: 200px;
-		background:	#22223b;
-		height: 5px;
-		border: 1px solid #22223b;
-	}
-}
-
-@media only screen and (max-height: 500px) {
-	.u-extension {
-		left: 19px;
-		top: 59px;
-		width: 200px;
-		background:	#22223b;
-		height: 5px;
-		border: 1px solid #22223b;
-	}
-}
-
-@media only screen and (max-width: 750px) {
-	.u-extension {
-		left: 19px;
-		top: 59px;
-		width: 200px;
-		background:	#22223b;
-		height: 5px;
-		border: 1px solid #22223b;
-	}
-}
-
 @media only screen and (max-width: 750px) {
 	.vertical-center-padding{
 		margin-top:50%;
@@ -828,39 +803,6 @@ h1{
 .wood{
 	color: white;
 	background: url('pictures/wood.png');
-}
-
-@media only screen and (min-width: 750px) {
-	.i-extension {
-		left: 350px;
-		width: 200px;
-		top: 74px;
-		background:#22223b;
-		height: 5px;
-		border: 1px solid #22223b;
-	}
-}
-
-@media only screen and (max-height: 500px) {
-	.i-extension {
-		left: 230px;
-		width: 150px;
-		top: 46px;
-		background:#22223b;
-		height: 5px;
-		border: 1px solid #22223b;
-	}
-}
-
-@media only screen and (max-width: 751px) {
-	.i-extension {
-		left: 230px;
-		width: 150px;
-		top: 46px;
-		background:#22223b;
-		height: 5px;
-		border: 1px solid #22223b;
-	}
 }
 
 .full-vertical{
