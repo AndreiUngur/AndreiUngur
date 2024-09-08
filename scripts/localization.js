@@ -24,12 +24,23 @@ function clear_content(section){
     }
 }
 
+function create_link(align, reference){
+  node = document.createElement("a");
+  node.href = reference;
+  node.textContent = reference;
+  return node;
+}
+
 function create_dom_element(element_type, class_name, align, text_content){
+  if (element_type == "a") {
+    return create_link(align, text_content);
+  } else {
     node = document.createElement(element_type);
     node.className = class_name;
     node.textContent = text_content;
     node.align = align;
     return node;
+  }
 }
 
 function get_english_content(){
@@ -48,9 +59,6 @@ function get_french_content(){
 
 function write_content(language_data){
     write_about_me(language_data.sections.about);
-    write_experience(language_data.sections.experience);
-    write_projects(language_data.sections.projects);
-    write_involvement(language_data.sections.involvement);
 }
 
 function write_about_me(language_data){
@@ -61,46 +69,11 @@ function write_about_me(language_data){
     var section = document.querySelector('#About .align-right .body')
     clear_content(section)
     language_data.content.forEach(subsection => {
-        section.appendChild(create_dom_element('p', 'bolded', 'left', subsection.header));
+        section.appendChild(create_dom_element('p', 'bolded', 'center', subsection.header));
         subsection.body.forEach(paragraph => {
-          section.appendChild(create_dom_element('p', '', 'left', paragraph));
+          section.appendChild(create_dom_element('a', '', '', paragraph));
         });
     });
-}
-
-function write_experience(language_data){
-  document.querySelector('#label-experience a').textContent = language_data.header;
-  document.querySelector('#Experience .big-text h2').textContent = language_data.header;
-
-  language_data.content.forEach((exp_card, exp_i) => {
-      build_card(exp_card, exp_i, '#job');
-  });
-}
-
-function write_projects(language_data){
-  document.querySelector('#label-projects a').textContent = language_data.header;
-  document.querySelector('#Projects .big-text h2').textContent = language_data.header;
-  document.querySelector('#projects-content-container .intro p').textContent = language_data.blurb;
-
-  language_data.content.forEach((project, project_i) => {
-    document.querySelector('#project-title-' + project_i).textContent = project.header;
-
-    content = document.querySelector('#project-content-' + project_i)
-    clear_content(content);
-    project.body.forEach((content_body) => {
-      content.appendChild(create_dom_element('p', '', 'left', content_body));
-    });
-  });
-}
-
-function write_involvement(language_data){
-  document.querySelector('#label-involvement a').textContent = language_data.header;
-  document.querySelector('#Involvement .big-text h2').textContent = language_data.header;
-  document.querySelector('#involvement-content-container .intro p').textContent = language_data.blurb;
-
-  language_data.content.forEach((inv_card, inv_i) => {
-    build_card(inv_card, inv_i, '#involvement');
-  });
 }
 
 xmlhttp.onreadystatechange = function(){
